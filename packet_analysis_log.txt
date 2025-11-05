@@ -3526,3 +3526,495 @@ NETWORK	SrcIP=172.20.10.2	DstIP=70.130.228.80	Version=4	IHL=20	DSCP=0	ECN=0	TotL
 TRANSPORT	SrcPort=55752	DstPort=443	Proto=TCP	SeqNum=-1947663558	AckNum=1403206117	HeaderLen=20	Flags=0x19	FlagsDesc=FIN,PSH,ACK	Window=255	Checksum=0xe153	UrgPtr=0	PayloadLen=80	Service=HTTPS
 APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=35	Info=Application Data	Encrypted=Yes
 ----
+DELAY_SUMMARY	TotalNodalDelay=5.037960 ms	TotalProcessingDelay=1.942500 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.590072 ms	ProcessingPercent=38.6%	TransmissionPercent=0.1%	PropagationPercent=49.7%	QueuingPercent=11.7%	Bottleneck=Propagation
+----
+FRAME	FrameNo=1	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:08.813360700Z	ProcessingDelay=1.373900 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=1.373900 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.311500 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.313440 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=103.198.200.205	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.156800 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.476 ms	TotalDelay=3.135637 ms	HopDistance=500 km
+TRANSPORT	SrcPort=49997	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.100300 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.114 ms	TotalDelay=0.214983 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=6.072099 ms	TotalProcessingDelay=0.856300 ms	TotalTransmissionDelay=0.006096 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.708203 ms	ProcessingPercent=14.1%	TransmissionPercent=0.1%	PropagationPercent=41.2%	QueuingPercent=44.6%	Bottleneck=Queuing
+----
+FRAME	FrameNo=2	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T16:27:08.872152200Z	ProcessingDelay=0.265500 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.265500 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.138400 ms	TransmissionDelay=0.000624 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.140524 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=20.205.243.168	DstIP=172.20.10.2	TTL=44	Proto=6	ProtoName=TCP	TotLen=64	IHL=20	ProcessingDelay=0.103200 ms	TransmissionDelay=0.005120 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.878 ms	TotalDelay=4.486616 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=60704	Proto=TCP	PayloadLen=24	Flags=0x19	FlagsDesc=FIN,PSH,ACK	ProcessingDelay=0.068700 ms	TransmissionDelay=0.000352 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.051 ms	TotalDelay=0.121467 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=19	ProcessingDelay=0.280500 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.777 ms	TotalDelay=1.057991 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.056842 ms	TotalProcessingDelay=0.452200 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.099254 ms	ProcessingPercent=8.9%	TransmissionPercent=0.1%	PropagationPercent=49.5%	QueuingPercent=41.5%	Bottleneck=Propagation
+----
+FRAME	FrameNo=4	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:08.874761600Z	ProcessingDelay=0.062700 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.062700 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.197700 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.199640 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=71.18.1.161	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.104700 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.031 ms	TotalDelay=4.639250 ms	HopDistance=500 km
+TRANSPORT	SrcPort=57453	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.087100 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.067 ms	TotalDelay=0.155252 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=3.612122 ms	TotalProcessingDelay=0.554800 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.551934 ms	ProcessingPercent=15.4%	TransmissionPercent=0.1%	PropagationPercent=69.3%	QueuingPercent=15.3%	Bottleneck=Propagation
+----
+FRAME	FrameNo=6	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:09.099929300Z	ProcessingDelay=0.223600 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.223600 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.128800 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.130740 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=163.181.81.234	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.138900 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.482 ms	TotalDelay=3.124097 ms	HopDistance=500 km
+TRANSPORT	SrcPort=64179	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.063500 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.069 ms	TotalDelay=0.133686 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=4.047578 ms	TotalProcessingDelay=0.405400 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.136790 ms	ProcessingPercent=10.0%	TransmissionPercent=0.1%	PropagationPercent=61.8%	QueuingPercent=28.1%	Bottleneck=Propagation
+----
+FRAME	FrameNo=9	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:09.101965600Z	ProcessingDelay=0.099500 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.099500 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.152600 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.154540 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=104.18.26.90	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.109900 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.033 ms	TotalDelay=3.646600 ms	HopDistance=500 km
+TRANSPORT	SrcPort=52058	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.043400 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.102 ms	TotalDelay=0.146938 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=4.790771 ms	TotalProcessingDelay=0.446400 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.838983 ms	ProcessingPercent=9.3%	TransmissionPercent=0.1%	PropagationPercent=52.2%	QueuingPercent=38.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=7	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:09.100970700Z	ProcessingDelay=0.134000 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.134000 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.145100 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.147040 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=163.181.160.140	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.123900 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.701 ms	TotalDelay=4.327741 ms	HopDistance=500 km
+TRANSPORT	SrcPort=52247	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.043400 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.137 ms	TotalDelay=0.181990 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=3.260109 ms	TotalProcessingDelay=0.337200 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.417521 ms	ProcessingPercent=10.3%	TransmissionPercent=0.1%	PropagationPercent=76.7%	QueuingPercent=12.8%	Bottleneck=Propagation
+----
+FRAME	FrameNo=8	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:09.100970700Z	ProcessingDelay=0.057000 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.057000 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.091900 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.093840 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=163.181.160.140	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.140700 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.311 ms	TotalDelay=2.955129 ms	HopDistance=500 km
+TRANSPORT	SrcPort=65289	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.047600 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.105 ms	TotalDelay=0.154140 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=4.108605 ms	TotalProcessingDelay=0.459700 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.143517 ms	ProcessingPercent=11.2%	TransmissionPercent=0.1%	PropagationPercent=60.9%	QueuingPercent=27.8%	Bottleneck=Propagation
+----
+FRAME	FrameNo=11	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:09.156968500Z	ProcessingDelay=0.063200 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.063200 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.237000 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.238940 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=163.181.160.140	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.113600 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.081 ms	TotalDelay=3.698211 ms	HopDistance=500 km
+TRANSPORT	SrcPort=57690	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.045900 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.061 ms	TotalDelay=0.108254 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=3.921775 ms	TotalProcessingDelay=0.320600 ms	TotalTransmissionDelay=0.029808 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.069867 ms	ProcessingPercent=8.2%	TransmissionPercent=0.8%	PropagationPercent=63.8%	QueuingPercent=27.3%	Bottleneck=Propagation
+----
+FRAME	FrameNo=16	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=325	CapLen=325	WireBits=2600	Timestamp=2025-11-05T16:27:10.244497100Z	ProcessingDelay=0.153300 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.153300 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.071100 ms	TransmissionDelay=0.002600 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.075200 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=142.251.43.138	DstIP=172.20.10.2	TTL=54	Proto=17	ProtoName=UDP	TotLen=311	IHL=20	ProcessingDelay=0.075100 ms	TransmissionDelay=0.024880 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.941 ms	TotalDelay=3.540852 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=64582	Proto=UDP	PayloadLen=283	Flags=-	ProcessingDelay=0.021100 ms	TransmissionDelay=0.002328 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.128 ms	TotalDelay=0.152424 ms
+APP	AppProto=UNKNOWN	Info=No specific application protocol detected
+----
+DELAY_SUMMARY	TotalNodalDelay=4.112566 ms	TotalProcessingDelay=0.212600 ms	TotalTransmissionDelay=0.005904 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.392562 ms	ProcessingPercent=5.2%	TransmissionPercent=0.1%	PropagationPercent=60.8%	QueuingPercent=33.9%	Bottleneck=Propagation
+----
+FRAME	FrameNo=18	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=76	CapLen=76	WireBits=608	Timestamp=2025-11-05T16:27:10.245520600Z	ProcessingDelay=0.051700 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.051700 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.069700 ms	TransmissionDelay=0.000608 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.071808 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=142.251.43.138	TTL=128	Proto=17	ProtoName=UDP	TotLen=62	IHL=20	ProcessingDelay=0.075200 ms	TransmissionDelay=0.004960 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.280 ms	TotalDelay=3.860472 ms	HopDistance=500 km
+TRANSPORT	SrcPort=64582	DstPort=443	Proto=UDP	PayloadLen=34	Flags=-	ProcessingDelay=0.016000 ms	TransmissionDelay=0.000336 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.111 ms	TotalDelay=0.128586 ms
+APP	AppProto=UNKNOWN	Info=No specific application protocol detected
+----
+DELAY_SUMMARY	TotalNodalDelay=4.178489 ms	TotalProcessingDelay=0.302400 ms	TotalTransmissionDelay=0.029808 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.344781 ms	ProcessingPercent=7.2%	TransmissionPercent=0.7%	PropagationPercent=59.9%	QueuingPercent=32.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=17	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=325	CapLen=325	WireBits=2600	Timestamp=2025-11-05T16:27:10.245520600Z	ProcessingDelay=0.057000 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.057000 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.075800 ms	TransmissionDelay=0.002600 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.079900 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=142.251.43.138	DstIP=172.20.10.2	TTL=54	Proto=17	ProtoName=UDP	TotLen=311	IHL=20	ProcessingDelay=0.149400 ms	TransmissionDelay=0.024880 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.230 ms	TotalDelay=3.904486 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=64582	Proto=UDP	PayloadLen=283	Flags=-	ProcessingDelay=0.020200 ms	TransmissionDelay=0.002328 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.114 ms	TotalDelay=0.137103 ms
+APP	AppProto=UNKNOWN	Info=No specific application protocol detected
+----
+DELAY_SUMMARY	TotalNodalDelay=4.914036 ms	TotalProcessingDelay=0.691700 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.716948 ms	ProcessingPercent=14.1%	TransmissionPercent=0.1%	PropagationPercent=50.9%	QueuingPercent=34.9%	Bottleneck=Propagation
+----
+FRAME	FrameNo=19	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:10.721582200Z	ProcessingDelay=0.262300 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.262300 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.308200 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.310140 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=103.198.200.205	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.075500 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.623 ms	TotalDelay=4.202158 ms	HopDistance=500 km
+TRANSPORT	SrcPort=60996	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.045700 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.093 ms	TotalDelay=0.139438 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=4.899636 ms	TotalProcessingDelay=0.673300 ms	TotalTransmissionDelay=0.006096 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.718740 ms	ProcessingPercent=13.7%	TransmissionPercent=0.1%	PropagationPercent=51.1%	QueuingPercent=35.1%	Bottleneck=Propagation
+----
+FRAME	FrameNo=20	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T16:27:10.772118600Z	ProcessingDelay=0.141600 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.141600 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.173500 ms	TransmissionDelay=0.000624 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.175624 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=20.205.243.168	DstIP=172.20.10.2	TTL=44	Proto=6	ProtoName=TCP	TotLen=64	IHL=20	ProcessingDelay=0.080600 ms	TransmissionDelay=0.005120 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.107 ms	TotalDelay=3.692794 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=60704	Proto=TCP	PayloadLen=24	Flags=0x19	FlagsDesc=FIN,PSH,ACK	ProcessingDelay=0.047900 ms	TransmissionDelay=0.000352 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.083 ms	TotalDelay=0.132172 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=19	ProcessingDelay=0.229700 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.528 ms	TotalDelay=0.757446 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.411072 ms	TotalProcessingDelay=0.554300 ms	TotalTransmissionDelay=0.008976 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.346296 ms	ProcessingPercent=12.6%	TransmissionPercent=0.2%	PropagationPercent=56.7%	QueuingPercent=30.5%	Bottleneck=Propagation
+----
+FRAME	FrameNo=22	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=108	CapLen=108	WireBits=864	Timestamp=2025-11-05T16:27:11.302097700Z	ProcessingDelay=0.125700 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.125700 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.068400 ms	TransmissionDelay=0.000864 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.070764 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=3.108.35.59	TTL=128	Proto=6	ProtoName=TCP	TotLen=94	IHL=20	ProcessingDelay=0.100900 ms	TransmissionDelay=0.007520 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.921 ms	TotalDelay=3.529821 ms	HopDistance=500 km
+TRANSPORT	SrcPort=52087	DstPort=443	Proto=TCP	PayloadLen=54	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.050000 ms	TransmissionDelay=0.000592 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.120 ms	TotalDelay=0.171215 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=49	ProcessingDelay=0.209300 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.304 ms	TotalDelay=0.513571 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.017264 ms	TotalProcessingDelay=0.530700 ms	TotalTransmissionDelay=0.009168 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.975896 ms	ProcessingPercent=13.2%	TransmissionPercent=0.2%	PropagationPercent=62.3%	QueuingPercent=24.3%	Bottleneck=Propagation
+----
+FRAME	FrameNo=24	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=110	CapLen=110	WireBits=880	Timestamp=2025-11-05T16:27:11.420290000Z	ProcessingDelay=0.064700 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.064700 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.126800 ms	TransmissionDelay=0.000880 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.129180 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=3.108.35.59	DstIP=172.20.10.2	TTL=51	Proto=6	ProtoName=TCP	TotLen=96	IHL=20	ProcessingDelay=0.073100 ms	TransmissionDelay=0.007680 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.497 ms	TotalDelay=3.077391 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=52087	Proto=TCP	PayloadLen=56	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.045700 ms	TransmissionDelay=0.000608 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.052 ms	TotalDelay=0.098869 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=51	ProcessingDelay=0.220400 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.427 ms	TotalDelay=0.647124 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=0.178588 ms	TotalProcessingDelay=0.176400 ms	TotalTransmissionDelay=0.000688 ms	TotalPropagationDelay=0.000500 ms	TotalQueuingDelay=0.001000 ms	ProcessingPercent=98.8%	TransmissionPercent=0.4%	PropagationPercent=0.3%	QueuingPercent=0.6%	Bottleneck=Processing
+----
+FRAME	FrameNo=23	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=86	CapLen=86	WireBits=688	Timestamp=2025-11-05T16:27:11.419290700Z	ProcessingDelay=0.109100 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.109100 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x86dd	EtherTypeDesc=IPv6	ProcessingDelay=0.067300 ms	TransmissionDelay=0.000688 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.069488 ms	LinkRate=1000 Mbps	Distance=100.0 m
+----
+DELAY_SUMMARY	TotalNodalDelay=4.254931 ms	TotalProcessingDelay=0.224000 ms	TotalTransmissionDelay=0.005904 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.523527 ms	ProcessingPercent=5.3%	TransmissionPercent=0.1%	PropagationPercent=58.8%	QueuingPercent=35.8%	Bottleneck=Propagation
+----
+FRAME	FrameNo=26	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=76	CapLen=76	WireBits=608	Timestamp=2025-11-05T16:27:11.420290000Z	ProcessingDelay=0.052700 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.052700 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.073000 ms	TransmissionDelay=0.000608 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.075108 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=142.251.43.138	TTL=128	Proto=17	ProtoName=UDP	TotLen=62	IHL=20	ProcessingDelay=0.082600 ms	TransmissionDelay=0.004960 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.404 ms	TotalDelay=3.991684 ms	HopDistance=500 km
+TRANSPORT	SrcPort=64582	DstPort=443	Proto=UDP	PayloadLen=34	Flags=-	ProcessingDelay=0.015700 ms	TransmissionDelay=0.000336 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.118 ms	TotalDelay=0.135439 ms
+APP	AppProto=UNKNOWN	Info=No specific application protocol detected
+----
+DELAY_SUMMARY	TotalNodalDelay=4.542142 ms	TotalProcessingDelay=0.780900 ms	TotalTransmissionDelay=0.010320 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.249422 ms	ProcessingPercent=17.2%	TransmissionPercent=0.2%	PropagationPercent=55.1%	QueuingPercent=27.5%	Bottleneck=Propagation
+----
+FRAME	FrameNo=25	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=122	CapLen=122	WireBits=976	Timestamp=2025-11-05T16:27:11.420290000Z	ProcessingDelay=0.071400 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.071400 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.084900 ms	TransmissionDelay=0.000976 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.087376 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=142.251.43.138	DstIP=172.20.10.2	TTL=54	Proto=17	ProtoName=UDP	TotLen=108	IHL=20	ProcessingDelay=0.074300 ms	TransmissionDelay=0.008640 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.178 ms	TotalDelay=3.761334 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=64582	Proto=UDP	PayloadLen=80	Flags=-	ProcessingDelay=0.550300 ms	TransmissionDelay=0.000704 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.070 ms	TotalDelay=0.622031 ms
+APP	AppProto=UNKNOWN	Info=No specific application protocol detected
+----
+DELAY_SUMMARY	TotalNodalDelay=0.195524 ms	TotalProcessingDelay=0.193400 ms	TotalTransmissionDelay=0.000624 ms	TotalPropagationDelay=0.000500 ms	TotalQueuingDelay=0.001000 ms	ProcessingPercent=98.9%	TransmissionPercent=0.3%	PropagationPercent=0.3%	QueuingPercent=0.5%	Bottleneck=Processing
+----
+FRAME	FrameNo=27	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T16:27:11.422292500Z	ProcessingDelay=0.105400 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.105400 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x86dd	EtherTypeDesc=IPv6	ProcessingDelay=0.088000 ms	TransmissionDelay=0.000624 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.090124 ms	LinkRate=1000 Mbps	Distance=100.0 m
+----
+DELAY_SUMMARY	TotalNodalDelay=4.923034 ms	TotalProcessingDelay=0.446500 ms	TotalTransmissionDelay=0.003792 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.971242 ms	ProcessingPercent=9.1%	TransmissionPercent=0.1%	PropagationPercent=50.8%	QueuingPercent=40.0%	Bottleneck=Propagation
+----
+FRAME	FrameNo=28	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=54	CapLen=54	WireBits=432	Timestamp=2025-11-05T16:27:11.474063900Z	ProcessingDelay=0.229900 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.229900 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.093900 ms	TransmissionDelay=0.000432 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.095832 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=3.108.35.59	TTL=128	Proto=6	ProtoName=TCP	TotLen=40	IHL=20	ProcessingDelay=0.084300 ms	TransmissionDelay=0.003200 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.892 ms	TotalDelay=4.479089 ms	HopDistance=500 km
+TRANSPORT	SrcPort=52087	DstPort=443	Proto=TCP	PayloadLen=0	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.038400 ms	TransmissionDelay=0.000160 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.079 ms	TotalDelay=0.118214 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=0.195088 ms	TotalProcessingDelay=0.192900 ms	TotalTransmissionDelay=0.000688 ms	TotalPropagationDelay=0.000500 ms	TotalQueuingDelay=0.001000 ms	ProcessingPercent=98.9%	TransmissionPercent=0.4%	PropagationPercent=0.3%	QueuingPercent=0.5%	Bottleneck=Processing
+----
+FRAME	FrameNo=29	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=86	CapLen=86	WireBits=688	Timestamp=2025-11-05T16:27:11.585391700Z	ProcessingDelay=0.123600 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.123600 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x86dd	EtherTypeDesc=IPv6	ProcessingDelay=0.069300 ms	TransmissionDelay=0.000688 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.071488 ms	LinkRate=1000 Mbps	Distance=100.0 m
+----
+DELAY_SUMMARY	TotalNodalDelay=0.150788 ms	TotalProcessingDelay=0.148600 ms	TotalTransmissionDelay=0.000688 ms	TotalPropagationDelay=0.000500 ms	TotalQueuingDelay=0.001000 ms	ProcessingPercent=98.5%	TransmissionPercent=0.5%	PropagationPercent=0.3%	QueuingPercent=0.7%	Bottleneck=Processing
+----
+FRAME	FrameNo=30	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=86	CapLen=86	WireBits=688	Timestamp=2025-11-05T16:27:11.587390100Z	ProcessingDelay=0.092200 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.092200 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x86dd	EtherTypeDesc=IPv6	ProcessingDelay=0.056400 ms	TransmissionDelay=0.000688 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.058588 ms	LinkRate=1000 Mbps	Distance=100.0 m
+----
+DELAY_SUMMARY	TotalNodalDelay=4.410352 ms	TotalProcessingDelay=0.525900 ms	TotalTransmissionDelay=0.008592 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.374360 ms	ProcessingPercent=11.9%	TransmissionPercent=0.2%	PropagationPercent=56.7%	QueuingPercent=31.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=31	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=104	CapLen=104	WireBits=832	Timestamp=2025-11-05T16:27:12.618261500Z	ProcessingDelay=0.124000 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.124000 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.077400 ms	TransmissionDelay=0.000832 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.079732 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=52.123.164.71	TTL=128	Proto=6	ProtoName=TCP	TotLen=90	IHL=20	ProcessingDelay=0.070100 ms	TransmissionDelay=0.007200 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.638 ms	TotalDelay=3.215219 ms	HopDistance=500 km
+TRANSPORT	SrcPort=52650	DstPort=443	Proto=TCP	PayloadLen=50	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.045300 ms	TransmissionDelay=0.000560 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.120 ms	TotalDelay=0.167327 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=45	ProcessingDelay=0.209100 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.615 ms	TotalDelay=0.824074 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=3.991216 ms	TotalProcessingDelay=0.337700 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.148128 ms	ProcessingPercent=8.5%	TransmissionPercent=0.1%	PropagationPercent=62.7%	QueuingPercent=28.8%	Bottleneck=Propagation
+----
+FRAME	FrameNo=32	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:12.852843800Z	ProcessingDelay=0.159000 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.159000 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.063700 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.065640 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=103.198.200.211	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.064600 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.006 ms	TotalDelay=3.574036 ms	HopDistance=500 km
+TRANSPORT	SrcPort=59907	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.050400 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.141 ms	TotalDelay=0.192539 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=5.787559 ms	TotalProcessingDelay=0.419600 ms	TotalTransmissionDelay=0.007536 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.858923 ms	ProcessingPercent=7.3%	TransmissionPercent=0.1%	PropagationPercent=43.2%	QueuingPercent=49.4%	Bottleneck=Queuing
+----
+FRAME	FrameNo=33	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=93	CapLen=93	WireBits=744	Timestamp=2025-11-05T16:27:12.853838500Z	ProcessingDelay=0.058100 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.058100 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.057700 ms	TransmissionDelay=0.000744 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.059944 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=52.123.164.71	DstIP=172.20.10.2	TTL=106	Proto=6	ProtoName=TCP	TotLen=79	IHL=20	ProcessingDelay=0.067600 ms	TransmissionDelay=0.006320 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.053 ms	TotalDelay=4.626629 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=52650	Proto=TCP	PayloadLen=39	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.030800 ms	TransmissionDelay=0.000472 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.086 ms	TotalDelay=0.118498 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=34	ProcessingDelay=0.205400 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.719 ms	TotalDelay=0.924388 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.399585 ms	TotalProcessingDelay=0.283700 ms	TotalTransmissionDelay=0.003792 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.610593 ms	ProcessingPercent=6.4%	TransmissionPercent=0.1%	PropagationPercent=56.9%	QueuingPercent=36.6%	Bottleneck=Propagation
+----
+FRAME	FrameNo=34	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=54	CapLen=54	WireBits=432	Timestamp=2025-11-05T16:27:12.905107200Z	ProcessingDelay=0.122600 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.122600 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.055000 ms	TransmissionDelay=0.000432 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.056932 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=52.123.164.71	TTL=128	Proto=6	ProtoName=TCP	TotLen=40	IHL=20	ProcessingDelay=0.065400 ms	TransmissionDelay=0.003200 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.544 ms	TotalDelay=4.112730 ms	HopDistance=500 km
+TRANSPORT	SrcPort=52650	DstPort=443	Proto=TCP	PayloadLen=0	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.040700 ms	TransmissionDelay=0.000160 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.065 ms	TotalDelay=0.107323 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=2.992758 ms	TotalProcessingDelay=0.262800 ms	TotalTransmissionDelay=0.005904 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.222554 ms	ProcessingPercent=8.8%	TransmissionPercent=0.2%	PropagationPercent=83.6%	QueuingPercent=7.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=37	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=76	CapLen=76	WireBits=608	Timestamp=2025-11-05T16:27:13.017590300Z	ProcessingDelay=0.116800 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.116800 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.065500 ms	TransmissionDelay=0.000608 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.067608 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=142.251.43.138	TTL=128	Proto=17	ProtoName=UDP	TotLen=62	IHL=20	ProcessingDelay=0.065500 ms	TransmissionDelay=0.004960 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.143 ms	TotalDelay=2.712968 ms	HopDistance=500 km
+TRANSPORT	SrcPort=64582	DstPort=443	Proto=UDP	PayloadLen=34	Flags=-	ProcessingDelay=0.015000 ms	TransmissionDelay=0.000336 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.079 ms	TotalDelay=0.095382 ms
+APP	AppProto=UNKNOWN	Info=No specific application protocol detected
+----
+DELAY_SUMMARY	TotalNodalDelay=4.254079 ms	TotalProcessingDelay=0.307000 ms	TotalTransmissionDelay=0.025968 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.419611 ms	ProcessingPercent=7.2%	TransmissionPercent=0.6%	PropagationPercent=58.8%	QueuingPercent=33.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=36	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=285	CapLen=285	WireBits=2280	Timestamp=2025-11-05T16:27:13.017590300Z	ProcessingDelay=0.122600 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.122600 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.100600 ms	TransmissionDelay=0.002280 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.104380 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=142.251.43.138	DstIP=172.20.10.2	TTL=54	Proto=17	ProtoName=UDP	TotLen=271	IHL=20	ProcessingDelay=0.068200 ms	TransmissionDelay=0.021680 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.348 ms	TotalDelay=3.937683 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=64582	Proto=UDP	PayloadLen=243	Flags=-	ProcessingDelay=0.015600 ms	TransmissionDelay=0.002008 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.071 ms	TotalDelay=0.089416 ms
+APP	AppProto=UNKNOWN	Info=No specific application protocol detected
+----
+DELAY_SUMMARY	TotalNodalDelay=3.992623 ms	TotalProcessingDelay=0.654900 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.832335 ms	ProcessingPercent=16.4%	TransmissionPercent=0.1%	PropagationPercent=62.7%	QueuingPercent=20.8%	Bottleneck=Propagation
+----
+FRAME	FrameNo=38	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:14.727334200Z	ProcessingDelay=0.465700 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.465700 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.070100 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.072040 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=18.97.36.44	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.074200 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.734 ms	TotalDelay=3.311258 ms	HopDistance=500 km
+TRANSPORT	SrcPort=55419	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.044900 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.098 ms	TotalDelay=0.143625 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=5.497053 ms	TotalProcessingDelay=0.488900 ms	TotalTransmissionDelay=0.006192 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.500461 ms	ProcessingPercent=8.9%	TransmissionPercent=0.1%	PropagationPercent=45.5%	QueuingPercent=45.5%	Bottleneck=Propagation
+----
+FRAME	FrameNo=39	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=79	CapLen=79	WireBits=632	Timestamp=2025-11-05T16:27:14.839140000Z	ProcessingDelay=0.107200 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.107200 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.053300 ms	TransmissionDelay=0.000632 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.055432 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=140.82.112.26	DstIP=172.20.10.2	TTL=38	Proto=6	ProtoName=TCP	TotLen=65	IHL=20	ProcessingDelay=0.074700 ms	TransmissionDelay=0.005200 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.077 ms	TotalDelay=4.656557 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=53067	Proto=TCP	PayloadLen=25	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.046800 ms	TransmissionDelay=0.000360 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.111 ms	TotalDelay=0.159502 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=20	ProcessingDelay=0.206900 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.311 ms	TotalDelay=0.518362 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.604204 ms	TotalProcessingDelay=0.379300 ms	TotalTransmissionDelay=0.006576 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.716828 ms	ProcessingPercent=8.2%	TransmissionPercent=0.1%	PropagationPercent=54.3%	QueuingPercent=37.3%	Bottleneck=Propagation
+----
+FRAME	FrameNo=40	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=83	CapLen=83	WireBits=664	Timestamp=2025-11-05T16:27:14.840723400Z	ProcessingDelay=0.039200 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.039200 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.041700 ms	TransmissionDelay=0.000664 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.043864 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=140.82.112.26	TTL=128	Proto=6	ProtoName=TCP	TotLen=69	IHL=20	ProcessingDelay=0.059500 ms	TransmissionDelay=0.005520 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.304 ms	TotalDelay=3.868922 ms	HopDistance=500 km
+TRANSPORT	SrcPort=53067	DstPort=443	Proto=TCP	PayloadLen=29	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.034500 ms	TransmissionDelay=0.000392 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.106 ms	TotalDelay=0.141833 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=24	ProcessingDelay=0.204400 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.306 ms	TotalDelay=0.510385 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.349475 ms	TotalProcessingDelay=0.500000 ms	TotalTransmissionDelay=0.026544 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.321431 ms	ProcessingPercent=9.3%	TransmissionPercent=0.5%	PropagationPercent=46.8%	QueuingPercent=43.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=41	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=291	CapLen=291	WireBits=2328	Timestamp=2025-11-05T16:27:15.262128400Z	ProcessingDelay=0.118600 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.118600 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.057100 ms	TransmissionDelay=0.002328 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.060928 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=18.97.36.44	TTL=128	Proto=6	ProtoName=TCP	TotLen=277	IHL=20	ProcessingDelay=0.067400 ms	TransmissionDelay=0.022160 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.722 ms	TotalDelay=4.311925 ms	HopDistance=500 km
+TRANSPORT	SrcPort=55419	DstPort=443	Proto=TCP	PayloadLen=237	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.047800 ms	TransmissionDelay=0.002056 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.070 ms	TotalDelay=0.120575 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=232	ProcessingDelay=0.209100 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.528 ms	TotalDelay=0.737446 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.400615 ms	TotalProcessingDelay=0.782300 ms	TotalTransmissionDelay=0.006096 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.110719 ms	ProcessingPercent=17.8%	TransmissionPercent=0.1%	PropagationPercent=56.8%	QueuingPercent=25.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=43	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T16:27:15.314043500Z	ProcessingDelay=0.409800 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.409800 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.063200 ms	TransmissionDelay=0.000624 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.065324 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=20.205.243.168	DstIP=172.20.10.2	TTL=44	Proto=6	ProtoName=TCP	TotLen=64	IHL=20	ProcessingDelay=0.065600 ms	TransmissionDelay=0.005120 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.648 ms	TotalDelay=3.218891 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=60704	Proto=TCP	PayloadLen=24	Flags=0x19	FlagsDesc=FIN,PSH,ACK	ProcessingDelay=0.035000 ms	TransmissionDelay=0.000352 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.083 ms	TotalDelay=0.119190 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=19	ProcessingDelay=0.208700 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.379 ms	TotalDelay=0.587409 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=3.546137 ms	TotalProcessingDelay=0.247500 ms	TotalTransmissionDelay=0.003792 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.793345 ms	ProcessingPercent=7.0%	TransmissionPercent=0.1%	PropagationPercent=70.5%	QueuingPercent=22.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=44	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=54	CapLen=54	WireBits=432	Timestamp=2025-11-05T16:27:15.314043500Z	ProcessingDelay=0.095400 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.095400 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.057400 ms	TransmissionDelay=0.000432 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.059332 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=140.82.112.26	DstIP=172.20.10.2	TTL=38	Proto=6	ProtoName=TCP	TotLen=40	IHL=20	ProcessingDelay=0.064500 ms	TransmissionDelay=0.003200 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.708 ms	TotalDelay=3.275475 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=53067	Proto=TCP	PayloadLen=0	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.030200 ms	TransmissionDelay=0.000160 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.085 ms	TotalDelay=0.115930 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=5.919884 ms	TotalProcessingDelay=0.711600 ms	TotalTransmissionDelay=0.026544 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.680240 ms	ProcessingPercent=12.0%	TransmissionPercent=0.4%	PropagationPercent=42.3%	QueuingPercent=45.3%	Bottleneck=Queuing
+----
+FRAME	FrameNo=45	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=291	CapLen=291	WireBits=2328	Timestamp=2025-11-05T16:27:16.039404700Z	ProcessingDelay=0.279100 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.279100 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.103600 ms	TransmissionDelay=0.002328 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.107428 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=18.97.36.44	TTL=128	Proto=6	ProtoName=TCP	TotLen=277	IHL=20	ProcessingDelay=0.073100 ms	TransmissionDelay=0.022160 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.857 ms	TotalDelay=4.452743 ms	HopDistance=500 km
+TRANSPORT	SrcPort=55419	DstPort=443	Proto=TCP	PayloadLen=237	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.047500 ms	TransmissionDelay=0.002056 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.054 ms	TotalDelay=0.104979 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=232	ProcessingDelay=0.208300 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.767 ms	TotalDelay=0.975635 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.546449 ms	TotalProcessingDelay=0.270700 ms	TotalTransmissionDelay=0.003792 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.770457 ms	ProcessingPercent=6.0%	TransmissionPercent=0.1%	PropagationPercent=55.0%	QueuingPercent=38.9%	Bottleneck=Propagation
+----
+FRAME	FrameNo=46	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=54	CapLen=54	WireBits=432	Timestamp=2025-11-05T16:27:16.091446000Z	ProcessingDelay=0.088800 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.088800 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.079200 ms	TransmissionDelay=0.000432 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.081132 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=18.97.36.44	DstIP=172.20.10.2	TTL=109	Proto=6	ProtoName=TCP	TotLen=40	IHL=20	ProcessingDelay=0.062700 ms	TransmissionDelay=0.003200 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.713 ms	TotalDelay=4.279121 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=55419	Proto=TCP	PayloadLen=0	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.040000 ms	TransmissionDelay=0.000160 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.056 ms	TotalDelay=0.097397 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=4.812190 ms	TotalProcessingDelay=0.351400 ms	TotalTransmissionDelay=0.015120 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.944170 ms	ProcessingPercent=7.3%	TransmissionPercent=0.3%	PropagationPercent=52.0%	QueuingPercent=40.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=47	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=172	CapLen=172	WireBits=1376	Timestamp=2025-11-05T16:27:16.093446000Z	ProcessingDelay=0.026600 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.026600 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.031100 ms	TransmissionDelay=0.001376 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.033976 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=18.97.36.44	DstIP=172.20.10.2	TTL=109	Proto=6	ProtoName=TCP	TotLen=158	IHL=20	ProcessingDelay=0.058200 ms	TransmissionDelay=0.012640 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.375 ms	TotalDelay=3.945984 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=55419	Proto=TCP	PayloadLen=118	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.029900 ms	TransmissionDelay=0.001104 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.148 ms	TotalDelay=0.180225 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=113	ProcessingDelay=0.205600 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.420 ms	TotalDelay=0.625405 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.479889 ms	TotalProcessingDelay=0.245600 ms	TotalTransmissionDelay=0.003792 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.728997 ms	ProcessingPercent=5.5%	TransmissionPercent=0.1%	PropagationPercent=55.8%	QueuingPercent=38.6%	Bottleneck=Propagation
+----
+FRAME	FrameNo=48	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=54	CapLen=54	WireBits=432	Timestamp=2025-11-05T16:27:16.145112300Z	ProcessingDelay=0.086000 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.086000 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.049400 ms	TransmissionDelay=0.000432 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.051332 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=18.97.36.44	TTL=128	Proto=6	ProtoName=TCP	TotLen=40	IHL=20	ProcessingDelay=0.073300 ms	TransmissionDelay=0.003200 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.587 ms	TotalDelay=4.163558 ms	HopDistance=500 km
+TRANSPORT	SrcPort=55419	DstPort=443	Proto=TCP	PayloadLen=0	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.036900 ms	TransmissionDelay=0.000160 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.141 ms	TotalDelay=0.178999 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=4.465997 ms	TotalProcessingDelay=0.303500 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.657109 ms	ProcessingPercent=6.8%	TransmissionPercent=0.1%	PropagationPercent=56.0%	QueuingPercent=37.1%	Bottleneck=Propagation
+----
+FRAME	FrameNo=50	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:18.705769700Z	ProcessingDelay=0.110800 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.110800 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.077600 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.079540 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=163.181.81.234	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.068800 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.581 ms	TotalDelay=4.153478 ms	HopDistance=500 km
+TRANSPORT	SrcPort=55098	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.046300 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.075 ms	TotalDelay=0.122179 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=4.954258 ms	TotalProcessingDelay=0.268900 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.179970 ms	ProcessingPercent=5.4%	TransmissionPercent=0.1%	PropagationPercent=50.5%	QueuingPercent=44.0%	Bottleneck=Propagation
+----
+FRAME	FrameNo=52	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:18.990348800Z	ProcessingDelay=0.117600 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.117600 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.053000 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.054940 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=40.99.10.2	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.061400 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.086 ms	TotalDelay=4.650835 ms	HopDistance=500 km
+TRANSPORT	SrcPort=53450	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.036900 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.093 ms	TotalDelay=0.130883 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=4.572282 ms	TotalProcessingDelay=0.622800 ms	TotalTransmissionDelay=0.008976 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.439006 ms	ProcessingPercent=13.6%	TransmissionPercent=0.2%	PropagationPercent=54.7%	QueuingPercent=31.5%	Bottleneck=Propagation
+----
+FRAME	FrameNo=54	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=108	CapLen=108	WireBits=864	Timestamp=2025-11-05T16:27:21.297014100Z	ProcessingDelay=0.205200 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.205200 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.106900 ms	TransmissionDelay=0.000864 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.109264 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=3.108.35.59	TTL=128	Proto=6	ProtoName=TCP	TotLen=94	IHL=20	ProcessingDelay=0.063600 ms	TransmissionDelay=0.007520 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.583 ms	TotalDelay=3.154350 ms	HopDistance=500 km
+TRANSPORT	SrcPort=52087	DstPort=443	Proto=TCP	PayloadLen=54	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.040500 ms	TransmissionDelay=0.000592 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.071 ms	TotalDelay=0.113030 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=49	ProcessingDelay=0.206600 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.784 ms	TotalDelay=0.990439 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.139897 ms	TotalProcessingDelay=0.366900 ms	TotalTransmissionDelay=0.006480 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.265017 ms	ProcessingPercent=8.9%	TransmissionPercent=0.2%	PropagationPercent=60.4%	QueuingPercent=30.6%	Bottleneck=Propagation
+----
+FRAME	FrameNo=56	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=82	CapLen=82	WireBits=656	Timestamp=2025-11-05T16:27:21.298769500Z	ProcessingDelay=0.025100 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.025100 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.045200 ms	TransmissionDelay=0.000656 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.047356 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=172.64.148.235	TTL=128	Proto=6	ProtoName=TCP	TotLen=68	IHL=20	ProcessingDelay=0.062900 ms	TransmissionDelay=0.005440 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.782 ms	TotalDelay=3.349930 ms	HopDistance=500 km
+TRANSPORT	SrcPort=59925	DstPort=443	Proto=TCP	PayloadLen=28	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.030100 ms	TransmissionDelay=0.000384 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.067 ms	TotalDelay=0.098680 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=23	ProcessingDelay=0.203600 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.415 ms	TotalDelay=0.618831 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.573033 ms	TotalProcessingDelay=0.406100 ms	TotalTransmissionDelay=0.006096 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.659337 ms	ProcessingPercent=7.3%	TransmissionPercent=0.1%	PropagationPercent=44.9%	QueuingPercent=47.7%	Bottleneck=Queuing
+----
+FRAME	FrameNo=55	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T16:27:21.298769500Z	ProcessingDelay=0.027300 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.027300 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.070300 ms	TransmissionDelay=0.000624 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.072424 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.64.148.235	DstIP=172.20.10.2	TTL=54	Proto=6	ProtoName=TCP	TotLen=64	IHL=20	ProcessingDelay=0.065400 ms	TransmissionDelay=0.005120 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.021 ms	TotalDelay=4.591824 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=59925	Proto=TCP	PayloadLen=24	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.037200 ms	TransmissionDelay=0.000352 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.075 ms	TotalDelay=0.113839 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=19	ProcessingDelay=0.205900 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.562 ms	TotalDelay=0.767646 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.563476 ms	TotalProcessingDelay=0.450000 ms	TotalTransmissionDelay=0.009360 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.602616 ms	ProcessingPercent=8.1%	TransmissionPercent=0.2%	PropagationPercent=45.0%	QueuingPercent=46.8%	Bottleneck=Queuing
+----
+FRAME	FrameNo=57	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=112	CapLen=112	WireBits=896	Timestamp=2025-11-05T16:27:21.350149800Z	ProcessingDelay=0.086500 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.086500 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.050300 ms	TransmissionDelay=0.000896 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.052696 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=52.123.160.123	TTL=128	Proto=6	ProtoName=TCP	TotLen=98	IHL=20	ProcessingDelay=0.065500 ms	TransmissionDelay=0.007840 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.070 ms	TotalDelay=4.642895 ms	HopDistance=500 km
+TRANSPORT	SrcPort=54365	DstPort=443	Proto=TCP	PayloadLen=58	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.041200 ms	TransmissionDelay=0.000624 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.093 ms	TotalDelay=0.135908 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=53	ProcessingDelay=0.206500 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.439 ms	TotalDelay=0.645477 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.816955 ms	TotalProcessingDelay=0.138200 ms	TotalTransmissionDelay=0.003792 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.173463 ms	ProcessingPercent=2.9%	TransmissionPercent=0.1%	PropagationPercent=51.9%	QueuingPercent=45.1%	Bottleneck=Propagation
+----
+FRAME	FrameNo=58	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=54	CapLen=54	WireBits=432	Timestamp=2025-11-05T16:27:21.350149800Z	ProcessingDelay=0.024900 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.024900 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.026200 ms	TransmissionDelay=0.000432 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.028132 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.64.148.235	DstIP=172.20.10.2	TTL=54	Proto=6	ProtoName=TCP	TotLen=40	IHL=20	ProcessingDelay=0.058100 ms	TransmissionDelay=0.003200 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.064 ms	TotalDelay=4.625679 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=59925	Proto=TCP	PayloadLen=0	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.029000 ms	TransmissionDelay=0.000160 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.108 ms	TotalDelay=0.138244 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=4.035773 ms	TotalProcessingDelay=0.341900 ms	TotalTransmissionDelay=0.009168 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.183205 ms	ProcessingPercent=8.5%	TransmissionPercent=0.2%	PropagationPercent=62.0%	QueuingPercent=29.3%	Bottleneck=Propagation
+----
+FRAME	FrameNo=59	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=110	CapLen=110	WireBits=880	Timestamp=2025-11-05T16:27:21.350149800Z	ProcessingDelay=0.020700 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.020700 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.031100 ms	TransmissionDelay=0.000880 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.033480 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=3.108.35.59	DstIP=172.20.10.2	TTL=51	Proto=6	ProtoName=TCP	TotLen=96	IHL=20	ProcessingDelay=0.057500 ms	TransmissionDelay=0.007680 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.407 ms	TotalDelay=2.971984 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=52087	Proto=TCP	PayloadLen=56	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.028900 ms	TransmissionDelay=0.000608 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.091 ms	TotalDelay=0.121129 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=51	ProcessingDelay=0.203700 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.685 ms	TotalDelay=0.888480 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=3.626107 ms	TotalProcessingDelay=0.245000 ms	TotalTransmissionDelay=0.003792 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.875815 ms	ProcessingPercent=6.8%	TransmissionPercent=0.1%	PropagationPercent=69.0%	QueuingPercent=24.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=60	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=54	CapLen=54	WireBits=432	Timestamp=2025-11-05T16:27:21.402322300Z	ProcessingDelay=0.094100 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.094100 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.047100 ms	TransmissionDelay=0.000432 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.049032 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=3.108.35.59	TTL=128	Proto=6	ProtoName=TCP	TotLen=40	IHL=20	ProcessingDelay=0.064800 ms	TransmissionDelay=0.003200 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.809 ms	TotalDelay=3.376995 ms	HopDistance=500 km
+TRANSPORT	SrcPort=52087	DstPort=443	Proto=TCP	PayloadLen=0	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.039000 ms	TransmissionDelay=0.000160 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.066 ms	TotalDelay=0.105979 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=5.550117 ms	TotalProcessingDelay=0.508000 ms	TotalTransmissionDelay=0.008304 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.532313 ms	ProcessingPercent=9.2%	TransmissionPercent=0.1%	PropagationPercent=45.1%	QueuingPercent=45.6%	Bottleneck=Queuing
+----
+FRAME	FrameNo=61	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T16:27:21.514634500Z	ProcessingDelay=0.108000 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.108000 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.075200 ms	TransmissionDelay=0.000808 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.077508 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=52.123.160.123	DstIP=172.20.10.2	TTL=105	Proto=6	ProtoName=TCP	TotLen=87	IHL=20	ProcessingDelay=0.069800 ms	TransmissionDelay=0.006960 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.732 ms	TotalDelay=4.308386 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=54365	Proto=TCP	PayloadLen=47	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.046700 ms	TransmissionDelay=0.000536 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.122 ms	TotalDelay=0.169852 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=42	ProcessingDelay=0.208300 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.678 ms	TotalDelay=0.886370 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.661929 ms	TotalProcessingDelay=0.321800 ms	TotalTransmissionDelay=0.003792 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.834837 ms	ProcessingPercent=6.9%	TransmissionPercent=0.1%	PropagationPercent=53.7%	QueuingPercent=39.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=62	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=54	CapLen=54	WireBits=432	Timestamp=2025-11-05T16:27:21.565045600Z	ProcessingDelay=0.166100 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.166100 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.052000 ms	TransmissionDelay=0.000432 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.053932 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=52.123.160.123	TTL=128	Proto=6	ProtoName=TCP	TotLen=40	IHL=20	ProcessingDelay=0.063700 ms	TransmissionDelay=0.003200 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.707 ms	TotalDelay=4.274178 ms	HopDistance=500 km
+TRANSPORT	SrcPort=54365	DstPort=443	Proto=TCP	PayloadLen=0	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.040000 ms	TransmissionDelay=0.000160 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.127 ms	TotalDelay=0.167719 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=3.675498 ms	TotalProcessingDelay=0.455100 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.715010 ms	ProcessingPercent=12.4%	TransmissionPercent=0.1%	PropagationPercent=68.1%	QueuingPercent=19.5%	Bottleneck=Propagation
+----
+FRAME	FrameNo=63	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:22.538114600Z	ProcessingDelay=0.153800 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.153800 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.089600 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.091540 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=150.171.28.11	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.095200 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.630 ms	TotalDelay=3.228815 ms	HopDistance=500 km
+TRANSPORT	SrcPort=54095	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.116500 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.084 ms	TotalDelay=0.201343 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=3.164348 ms	TotalProcessingDelay=0.330100 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.328860 ms	ProcessingPercent=10.4%	TransmissionPercent=0.1%	PropagationPercent=79.1%	QueuingPercent=10.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=64	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:22.541137300Z	ProcessingDelay=0.211600 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.211600 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.030300 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.032240 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=13.107.246.59	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.058400 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.248 ms	TotalDelay=2.809623 ms	HopDistance=500 km
+TRANSPORT	SrcPort=62446	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.029800 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.080 ms	TotalDelay=0.110885 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=4.583769 ms	TotalProcessingDelay=0.254800 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.823581 ms	ProcessingPercent=5.6%	TransmissionPercent=0.1%	PropagationPercent=54.6%	QueuingPercent=39.8%	Bottleneck=Propagation
+----
+FRAME	FrameNo=67	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:23.803022200Z	ProcessingDelay=0.101100 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.101100 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.052400 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.054340 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=40.99.10.2	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.063800 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.762 ms	TotalDelay=4.328618 ms	HopDistance=500 km
+TRANSPORT	SrcPort=55605	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.037500 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.061 ms	TotalDelay=0.099711 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=3.997111 ms	TotalProcessingDelay=0.343000 ms	TotalTransmissionDelay=0.006096 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.146515 ms	ProcessingPercent=8.6%	TransmissionPercent=0.2%	PropagationPercent=62.6%	QueuingPercent=28.7%	Bottleneck=Propagation
+----
+FRAME	FrameNo=68	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T16:27:23.803999300Z	ProcessingDelay=0.022100 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.022100 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.027100 ms	TransmissionDelay=0.000624 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.029224 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=20.205.243.168	DstIP=172.20.10.2	TTL=44	Proto=6	ProtoName=TCP	TotLen=64	IHL=20	ProcessingDelay=0.058700 ms	TransmissionDelay=0.005120 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.312 ms	TotalDelay=2.876061 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=60704	Proto=TCP	PayloadLen=24	Flags=0x19	FlagsDesc=FIN,PSH,ACK	ProcessingDelay=0.030000 ms	TransmissionDelay=0.000352 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.108 ms	TotalDelay=0.139025 ms
+APP	AppProto=TLS	ContentType=ApplicationData	Version=3.3	TLSVersion=TLS 1.2	Length=19	ProcessingDelay=0.205100 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.726 ms	TotalDelay=0.930702 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=3.584609 ms	TotalProcessingDelay=0.282900 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.796321 ms	ProcessingPercent=7.9%	TransmissionPercent=0.1%	PropagationPercent=69.8%	QueuingPercent=22.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=70	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:24.824573000Z	ProcessingDelay=0.130900 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.130900 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.048500 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.050440 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=163.181.160.140	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.062200 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.654 ms	TotalDelay=3.219971 ms	HopDistance=500 km
+TRANSPORT	SrcPort=55826	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.041300 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.141 ms	TotalDelay=0.183299 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=3.365892 ms	TotalProcessingDelay=0.285300 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.575204 ms	ProcessingPercent=8.5%	TransmissionPercent=0.1%	PropagationPercent=74.3%	QueuingPercent=17.1%	Bottleneck=Propagation
+----
+FRAME	FrameNo=72	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:25.052251700Z	ProcessingDelay=0.103700 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.103700 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.071000 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.072940 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=40.99.10.2	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.064400 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.506 ms	TotalDelay=3.073891 ms	HopDistance=500 km
+TRANSPORT	SrcPort=60703	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.046200 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.068 ms	TotalDelay=0.115360 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=4.483423 ms	TotalProcessingDelay=0.324900 ms	TotalTransmissionDelay=0.010512 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.646511 ms	ProcessingPercent=7.2%	TransmissionPercent=0.2%	PropagationPercent=55.8%	QueuingPercent=36.7%	Bottleneck=Propagation
+----
+FRAME	FrameNo=74	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=124	CapLen=124	WireBits=992	Timestamp=2025-11-05T16:27:26.257007000Z	ProcessingDelay=0.108000 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.108000 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.084900 ms	TransmissionDelay=0.000992 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.087392 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=57.144.143.32	TTL=128	Proto=6	ProtoName=TCP	TotLen=110	IHL=20	ProcessingDelay=0.073300 ms	TransmissionDelay=0.008800 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.531 ms	TotalDelay=4.112751 ms	HopDistance=500 km
+TRANSPORT	SrcPort=58717	DstPort=5222	Proto=TCP	PayloadLen=70	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.058700 ms	TransmissionDelay=0.000720 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.115 ms	TotalDelay=0.175281 ms
+APP	AppProto=UNKNOWN	Info=No specific application protocol detected
+----
+DELAY_SUMMARY	TotalNodalDelay=3.813212 ms	TotalProcessingDelay=0.265000 ms	TotalTransmissionDelay=0.003792 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.042920 ms	ProcessingPercent=6.9%	TransmissionPercent=0.1%	PropagationPercent=65.6%	QueuingPercent=27.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=75	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=54	CapLen=54	WireBits=432	Timestamp=2025-11-05T16:27:26.372222800Z	ProcessingDelay=0.105700 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.105700 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.055100 ms	TransmissionDelay=0.000432 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.057032 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=57.144.143.32	DstIP=172.20.10.2	TTL=50	Proto=6	ProtoName=TCP	TotLen=40	IHL=20	ProcessingDelay=0.063500 ms	TransmissionDelay=0.003200 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.951 ms	TotalDelay=3.517801 ms	HopDistance=500 km
+TRANSPORT	SrcPort=5222	DstPort=58717	Proto=TCP	PayloadLen=0	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.040700 ms	TransmissionDelay=0.000160 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.091 ms	TotalDelay=0.132679 ms
+APP	AppProto=UNKNOWN	Info=No specific application protocol detected
+----
+DELAY_SUMMARY	TotalNodalDelay=3.504920 ms	TotalProcessingDelay=0.288300 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.704416 ms	ProcessingPercent=8.2%	TransmissionPercent=0.3%	PropagationPercent=71.4%	QueuingPercent=20.1%	Bottleneck=Propagation
+----
+FRAME	FrameNo=76	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=126	CapLen=126	WireBits=1008	Timestamp=2025-11-05T16:27:26.852345900Z	ProcessingDelay=0.086900 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.086900 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.069200 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.071708 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=57.144.143.32	DstIP=172.20.10.2	TTL=50	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.085300 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.617 ms	TotalDelay=3.211486 ms	HopDistance=500 km
+TRANSPORT	SrcPort=5222	DstPort=58717	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.046900 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.086 ms	TotalDelay=0.134826 ms
+APP	AppProto=UNKNOWN	Info=No specific application protocol detected
+----
+DELAY_SUMMARY	TotalNodalDelay=4.903859 ms	TotalProcessingDelay=0.357700 ms	TotalTransmissionDelay=0.003792 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.040867 ms	ProcessingPercent=7.3%	TransmissionPercent=0.1%	PropagationPercent=51.0%	QueuingPercent=41.6%	Bottleneck=Propagation
+----
+FRAME	FrameNo=77	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=54	CapLen=54	WireBits=432	Timestamp=2025-11-05T16:27:26.902391000Z	ProcessingDelay=0.154600 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.154600 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.083000 ms	TransmissionDelay=0.000432 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.084932 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=57.144.143.32	TTL=128	Proto=6	ProtoName=TCP	TotLen=40	IHL=20	ProcessingDelay=0.075400 ms	TransmissionDelay=0.003200 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.920 ms	TotalDelay=4.498400 ms	HopDistance=500 km
+TRANSPORT	SrcPort=58717	DstPort=5222	Proto=TCP	PayloadLen=0	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.044700 ms	TransmissionDelay=0.000160 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.120 ms	TotalDelay=0.165928 ms
+APP	AppProto=UNKNOWN	Info=No specific application protocol detected
+----
+DELAY_SUMMARY	TotalNodalDelay=3.516843 ms	TotalProcessingDelay=0.249800 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.760119 ms	ProcessingPercent=7.1%	TransmissionPercent=0.2%	PropagationPercent=71.1%	QueuingPercent=21.6%	Bottleneck=Propagation
+----
+FRAME	FrameNo=78	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T16:27:27.997454600Z	ProcessingDelay=0.111000 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.111000 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.053800 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.055868 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=142.251.43.138	TTL=128	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.063500 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.649 ms	TotalDelay=3.217427 ms	HopDistance=500 km
+TRANSPORT	SrcPort=64582	DstPort=443	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.021500 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.110 ms	TotalDelay=0.132547 ms
+APP	AppProto=UNKNOWN	Info=No specific application protocol detected
+----
+DELAY_SUMMARY	TotalNodalDelay=3.716885 ms	TotalProcessingDelay=0.351000 ms	TotalTransmissionDelay=0.003888 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.860497 ms	ProcessingPercent=9.4%	TransmissionPercent=0.1%	PropagationPercent=67.3%	QueuingPercent=23.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=79	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=55	CapLen=55	WireBits=440	Timestamp=2025-11-05T16:27:28.233533600Z	ProcessingDelay=0.095800 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.095800 ms
+LINK	DstMAC=62:57:c8:04:dd:64	SrcMAC=10:e1:8e:4b:3f:44	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.152900 ms	TransmissionDelay=0.000440 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.154840 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=172.20.10.2	DstIP=54.205.164.44	TTL=128	Proto=6	ProtoName=TCP	TotLen=41	IHL=20	ProcessingDelay=0.062000 ms	TransmissionDelay=0.003280 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.764 ms	TotalDelay=3.329735 ms	HopDistance=500 km
+TRANSPORT	SrcPort=58090	DstPort=443	Proto=TCP	PayloadLen=1	Flags=0x10	FlagsDesc=ACK	ProcessingDelay=0.040300 ms	TransmissionDelay=0.000168 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.095 ms	TotalDelay=0.136510 ms
+APP	AppProto=TLS	Error=Packet too short
+----
+DELAY_SUMMARY	TotalNodalDelay=3.680665 ms	TotalProcessingDelay=0.218200 ms	TotalTransmissionDelay=0.005136 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.955829 ms	ProcessingPercent=5.9%	TransmissionPercent=0.1%	PropagationPercent=68.0%	QueuingPercent=26.0%	Bottleneck=Propagation
+----
+FRAME	FrameNo=80	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=68	CapLen=68	WireBits=544	Timestamp=2025-11-05T16:27:28.233533600Z	ProcessingDelay=0.054700 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.054700 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.076800 ms	TransmissionDelay=0.000544 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.078844 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=142.251.43.138	DstIP=172.20.10.2	TTL=54	Proto=17	ProtoName=UDP	TotLen=54	IHL=20	ProcessingDelay=0.066300 ms	TransmissionDelay=0.004320 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.845 ms	TotalDelay=3.415133 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=64582	Proto=UDP	PayloadLen=26	Flags=-	ProcessingDelay=0.020400 ms	TransmissionDelay=0.000272 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.110 ms	TotalDelay=0.131988 ms
+APP	AppProto=UNKNOWN	Info=No specific application protocol detected
+----
+DELAY_SUMMARY	TotalNodalDelay=3.558068 ms	TotalProcessingDelay=0.290400 ms	TotalTransmissionDelay=0.003792 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.762376 ms	ProcessingPercent=8.2%	TransmissionPercent=0.1%	PropagationPercent=70.3%	QueuingPercent=21.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=81	UsedNetwork=Qualcomm FastConnect 6900 Wi-Fi 6E Dual Band Simultaneous (DBS) WiFiCx Network Adapter #4	Len=54	CapLen=54	WireBits=432	Timestamp=2025-11-05T16:27:28.715530900Z	ProcessingDelay=0.132000 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.132000 ms
+LINK	DstMAC=10:e1:8e:4b:3f:44	SrcMAC=62:57:c8:04:dd:64	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.044900 ms	TransmissionDelay=0.000432 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.046832 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=54.205.164.44	DstIP=172.20.10.2	TTL=237	Proto=6	ProtoName=TCP	TotLen=40	IHL=20	ProcessingDelay=0.061700 ms	TransmissionDelay=0.003200 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.687 ms	TotalDelay=3.251433 ms	HopDistance=500 km
+TRANSPORT	SrcPort=443	DstPort=58090	Proto=TCP	PayloadLen=0	Flags=0x04	FlagsDesc=RST	ProcessingDelay=0.051800 ms	TransmissionDelay=0.000160 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.075 ms	TotalDelay=0.127803 ms
+APP	AppProto=TLS	Error=Packet too short
+----
