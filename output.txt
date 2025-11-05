@@ -1,272 +1,204 @@
-FRAME	FrameNo=5	Len=77	CapLen=77	WireBits=616	Timestamp=2025-11-05T07:42:56.809538700Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+FRAME	FrameNo=13	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:12.586423Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=63	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=35	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query2.google.com
-================================================================================
-FRAME	FrameNo=14	Len=77	CapLen=77	WireBits=616	Timestamp=2025-11-05T07:42:58.616869100Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=23	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:14.594215500Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=63	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=35	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query5.google.com
-================================================================================
-FRAME	FrameNo=25	Len=97	CapLen=97	WireBits=776	Timestamp=2025-11-05T07:43:00.825894700Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=19	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:13.790914300Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=83	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=43	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /9.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=17	Len=77	CapLen=77	WireBits=616	Timestamp=2025-11-05T07:42:59.220044600Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=26	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:15.196776500Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=63	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=35	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query6.google.com
-================================================================================
-FRAME	FrameNo=29	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T07:43:01.627531900Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=22	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:14.393503100Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=64	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=5353	Proto=UDP	PayloadLen=36	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query10.google.com
-================================================================================
-FRAME	FrameNo=32	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T07:43:02.228800200Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=29	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:15.799020100Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=64	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=36	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query11.google.com
-================================================================================
-FRAME	FrameNo=41	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T07:43:04.035661800Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=32	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:16.401575800Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=64	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=36	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query14.google.com
-================================================================================
-FRAME	FrameNo=1	Len=97	CapLen=97	WireBits=776	Timestamp=2025-11-05T07:42:56.005095600Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=31	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:16.200994700Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=83	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=43	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /1.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=22	Len=97	CapLen=97	WireBits=776	Timestamp=2025-11-05T07:43:00.223167300Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=35	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:17.002916600Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=83	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=43	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /8.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=8	Len=77	CapLen=77	WireBits=616	Timestamp=2025-11-05T07:42:57.411896900Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=11	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:12.184790800Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=63	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=5353	Proto=UDP	PayloadLen=35	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query3.google.com
-================================================================================
-FRAME	FrameNo=50	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T07:43:05.842224400Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=37	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:17.405266900Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=64	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=5353	Proto=UDP	PayloadLen=36	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query17.google.com
-================================================================================
-FRAME	FrameNo=4	Len=97	CapLen=97	WireBits=776	Timestamp=2025-11-05T07:42:56.609349800Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=40	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:18.009107500Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=83	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=43	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /2.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=19	Len=97	CapLen=97	WireBits=776	Timestamp=2025-11-05T07:42:59.620859500Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=44	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:18.813791900Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=83	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=43	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /7.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=20	Len=77	CapLen=77	WireBits=616	Timestamp=2025-11-05T07:42:59.821795300Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=46	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:19.215093800Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=63	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=35	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query7.google.com
-================================================================================
-FRAME	FrameNo=13	Len=97	CapLen=97	WireBits=776	Timestamp=2025-11-05T07:42:58.416133300Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=47	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:19.415674700Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=83	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=43	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /5.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=11	Len=77	CapLen=77	WireBits=616	Timestamp=2025-11-05T07:42:58.014939800Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=49	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:19.817280300Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=63	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=35	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query4.google.com
-================================================================================
-FRAME	FrameNo=23	Len=77	CapLen=77	WireBits=616	Timestamp=2025-11-05T07:43:00.424168800Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=50	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:20.018326600Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=63	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=35	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query8.google.com
-================================================================================
-FRAME	FrameNo=34	Len=98	CapLen=98	WireBits=784	Timestamp=2025-11-05T07:43:02.631180200Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=17	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:13.389427500Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=84	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=44	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /12.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=7	Len=97	CapLen=97	WireBits=776	Timestamp=2025-11-05T07:42:57.210841700Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=5	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:10.980676500Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=83	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=43	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /3.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=37	Len=98	CapLen=98	WireBits=784	Timestamp=2025-11-05T07:43:03.232680400Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=25	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:14.995710300Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=84	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=44	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /13.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=31	Len=98	CapLen=98	WireBits=784	Timestamp=2025-11-05T07:43:02.028369800Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=14	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:12.787022600Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=84	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=44	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /11.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=40	Len=98	CapLen=98	WireBits=784	Timestamp=2025-11-05T07:43:03.834590500Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=1	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:10.171428500Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=84	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=44	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /14.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=43	Len=98	CapLen=98	WireBits=784	Timestamp=2025-11-05T07:43:04.436953900Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=28	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:15.598446300Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=84	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=44	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /15.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=35	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T07:43:02.832094500Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=38	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:17.607327100Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=64	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=36	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query12.google.com
-================================================================================
-FRAME	FrameNo=28	Len=98	CapLen=98	WireBits=784	Timestamp=2025-11-05T07:43:01.427260300Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=41	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:18.210158900Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=84	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=44	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /10.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=46	Len=98	CapLen=98	WireBits=784	Timestamp=2025-11-05T07:43:05.039549100Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=43	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:18.613208100Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=84	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=44	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /16.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=26	Len=77	CapLen=77	WireBits=616	Timestamp=2025-11-05T07:43:01.026245200Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=34	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:16.802327100Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=63	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=35	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query9.google.com
-================================================================================
-FRAME	FrameNo=38	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T07:43:03.433270500Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=20	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:13.992009900Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=64	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=36	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query13.google.com
-================================================================================
-FRAME	FrameNo=49	Len=98	CapLen=98	WireBits=784	Timestamp=2025-11-05T07:43:05.641822800Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=4	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:10.778624900Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=84	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=44	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /17.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=47	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T07:43:05.240364700Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=7	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:11.381960700Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=64	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=36	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query16.google.com
-================================================================================
-FRAME	FrameNo=10	Len=97	CapLen=97	WireBits=776	Timestamp=2025-11-05T07:42:57.814535Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=8	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:11.583037Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=83	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=43	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /4.html HTTP/1.1
-================================================================================
-FRAME	FrameNo=44	Len=78	CapLen=78	WireBits=624	Timestamp=2025-11-05T07:43:04.637492500Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=2	Len=71	CapLen=71	WireBits=568	Timestamp=2025-11-05T08:40:10.376000600Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=64	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=36	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query15.google.com
-================================================================================
-FRAME	FrameNo=2	Len=77	CapLen=77	WireBits=616	Timestamp=2025-11-05T07:42:56.207614900Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=57	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=example.com
+----
+FRAME	FrameNo=10	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:11.984329500Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	TotLen=63	IHL=20
-TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=35	Flags=-
-APP	AppProto=DNS	ID=0x1234	Flags=0x0100	QD=1	AN=0	QNAME=query1.google.com
-================================================================================
-FRAME	FrameNo=16	Len=97	CapLen=97	WireBits=776	Timestamp=2025-11-05T07:42:59.019147400Z
-
-PHYSICAL	Interface=sim	LinkType=Ethernet
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
+FRAME	FrameNo=16	Len=101	CapLen=101	WireBits=808	Timestamp=2025-11-05T08:40:13.189123400Z
 LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800
-NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=83	IHL=20
-TRANSPORT	SrcPort=12345	DstPort=80	Proto=TCP	PayloadLen=43	Flags=0x18
-APP	AppProto=HTTP	FirstLine=GET /6.html HTTP/1.1
-================================================================================
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	TotLen=87	IHL=20
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=47	Flags=0x18
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1
+----
