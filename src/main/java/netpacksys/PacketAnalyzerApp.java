@@ -52,7 +52,7 @@ public final class PacketAnalyzerApp {
     }
 
     public long run() throws Exception {
-        System.out.printf("📡 Capturing for %ds, protocols=%s%n", cfg.durationSec(), cfg.protocols());
+        System.out.printf(" Capturing for %ds, protocols=%s%n", cfg.durationSec(), cfg.protocols());
         final AtomicLong count = new AtomicLong(0);
         long start = System.currentTimeMillis();
         final long deadline = start + cfg.durationSec() * 1000L;
@@ -88,7 +88,7 @@ public final class PacketAnalyzerApp {
                 long remainingSec = (deadline - System.currentTimeMillis() + 999) / 1000;
                 if (remainingSec < 0) remainingSec = 0;
 
-                System.out.printf("\r⏳ Time Remaining: %d seconds. Packets processed: %d", remainingSec, count.get());
+                System.out.printf("\r Time Remaining: %d seconds. Packets processed: %d", remainingSec, count.get());
 
                 if (remainingSec == 0) break;
 
@@ -105,7 +105,7 @@ public final class PacketAnalyzerApp {
             try {
                 captureFuture.get(cfg.durationSec() + 2, TimeUnit.SECONDS);
             } catch (TimeoutException e) {
-                System.err.println("⚠ Capture thread timed out during termination, forcing shutdown.");
+                System.err.println(" Capture thread timed out during termination, forcing shutdown.");
                 captureFuture.cancel(true);
             }
 

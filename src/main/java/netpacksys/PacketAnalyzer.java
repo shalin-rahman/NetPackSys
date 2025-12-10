@@ -67,7 +67,7 @@ public class PacketAnalyzer {
             protocols.add("HTTPS");
         }
 
-        System.out.printf("✅ Protocols selected: %s (Output logged to console AND %s)%n", protocols, OUTPUT_FILE);
+        System.out.printf(" Protocols selected: %s (Output logged to console AND %s)%n", protocols, OUTPUT_FILE);
 
         List<Integer> liveInterfaceIndices = new ArrayList<>();
         for (int i = 0; i < allDevs.size(); i++) {
@@ -122,11 +122,11 @@ public class PacketAnalyzer {
                     long processedPackets = new PacketAnalyzerApp(cfg).run();
 
                     if (processedPackets > 0) {
-                        System.out.printf("✅ Capture successful with %d packets on %s.\n", processedPackets, currentUsedNetwork);
+                        System.out.printf(" Capture successful with %d packets on %s.\n", processedPackets, currentUsedNetwork);
                         finalUsedNetwork = currentUsedNetwork;
                         successfulCapture = true;
                     } else {
-                        System.out.printf("⚠ Capture yielded 0 packets on %s. Retrying on next active interface.\n", currentUsedNetwork);
+                        System.out.printf(" Capture yielded 0 packets on %s. Retrying on next active interface.\n", currentUsedNetwork);
                     }
                 } catch (PcapNativeException e) {
                     System.err.printf(" Capture initialization failed on %s: %s. Retrying on next active interface.\n", currentUsedNetwork, e.getMessage());

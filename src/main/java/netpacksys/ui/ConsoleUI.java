@@ -27,14 +27,14 @@ public final class ConsoleUI implements AutoCloseable {
 
         try {
             if (activeDevs.isEmpty()) {
-                err.println("⚠️ No active network interfaces found. Forcing simulated capture mode ('sim').");
+                err.println(" No active network interfaces found. Forcing simulated capture mode ('sim').");
                 initialSelection = "sim";
             } else {
-                out.println("\n🌐 Available Network Interfaces (requires Administrator privileges for capture):");
+                out.println("\n Available Network Interfaces (requires Administrator privileges for capture):");
                 for (int i = 0; i < allDevs.size(); i++) {
                     PcapNetworkInterface dev = allDevs.get(i);
                     String desc = dev.getDescription() != null ? dev.getDescription() : "No description";
-                    String marker = activeDevs.contains(dev) ? "✨" : " -";
+                    String marker = activeDevs.contains(dev) ? "" : " -";
                     out.printf("  [%d]%s %s (%s)%n", i + 1, marker, dev.getName(), desc);
                 }
 
@@ -48,12 +48,12 @@ public final class ConsoleUI implements AutoCloseable {
             out.print("-> Enter capture duration in seconds (e.g., 10): ");
             String durationInput = scanner.nextLine().trim();
             if (durationInput.isEmpty()) {
-                err.println("❌ Duration cannot be empty. Using default 10 seconds.");
+                err.println(" Duration cannot be empty. Using default 10 seconds.");
                 durationSec = 10;
             } else {
                 durationSec = Integer.parseInt(durationInput);
                 if (durationSec <= 0) {
-                    err.println("❌ Duration must be a positive number. Using default 10 seconds.");
+                    err.println(" Duration must be a positive number. Using default 10 seconds.");
                     durationSec = 10;
                 }
             }
@@ -62,9 +62,9 @@ public final class ConsoleUI implements AutoCloseable {
             protocolsCSV = scanner.nextLine().trim();
             if (protocolsCSV.isEmpty()) protocolsCSV = "ALL";
         } catch (NumberFormatException e) {
-            err.println("❌ Invalid number input. Using default values.");
+            err.println(" Invalid number input. Using default values.");
         } catch (Exception e) {
-            err.println("❌ Unexpected error: " + e.getMessage() + ". Using default values.");
+            err.println(" Unexpected error: " + e.getMessage() + ". Using default values.");
         }
 
         return new UserSelection(initialSelection, durationSec, protocolsCSV);

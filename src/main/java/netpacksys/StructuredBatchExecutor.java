@@ -36,7 +36,7 @@ public final class StructuredBatchExecutor {
         executor.shutdown();
         try {
             if (!executor.awaitTermination(60, TimeUnit.SECONDS)) {
-                System.err.println("⚠ Batch executor did not terminate in time. Forcing shutdown.");
+                System.err.println(" Batch executor did not terminate in time. Forcing shutdown.");
                 executor.shutdownNow();
             }
         } catch (InterruptedException e) {
