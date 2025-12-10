@@ -65,8 +65,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <!-- Change this to your main class -->
-                            <mainClass>org.example.Main</mainClass>
+                            <mainClass>netpacksys.PacketAnalyzer</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

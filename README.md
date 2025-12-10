@@ -75,3 +75,29 @@ These delays are calculated based on packet size, link speed, and simulated prop
 # System Design Overview
 
 The analyzer follows modular OOP design guided by SOLID principles. Each component serves a single purpose—packet capture, parsing, delay analysis, and logging. While some classical patterns (e.g., Factory, Strategy) are conceptually applied, the design emphasizes structured modularity and modern concurrency models.
+
+---
+
+# Building & Testing
+
+## Core module
+1) Ensure JDK 21 is available. On Windows PowerShell you can set it for the current session:
+```powershell
+./scripts/setup-java.ps1              # auto-detect common JDK21 paths
+# or specify explicitly
+./scripts/setup-java.ps1 -JdkPath "C:\path\to\jdk-21"
+```
+2) Run tests:
+```bash
+mvn test
+```
+3) Package:
+```bash
+mvn package
+```
+
+## JavaFX viewer (independent module)
+```
+cd ui-fx
+mvn -DskipTests compile javafx:run
+```
