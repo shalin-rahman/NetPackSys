@@ -1,4 +1,9 @@
-package netpacksys;
+package netpacksys.parser;
+
+import netpacksys.DelayInfo;
+import netpacksys.PacketContext;
+
+import java.util.Arrays;
 
 import java.util.Arrays;
 import java.util.LinkedHashMap;

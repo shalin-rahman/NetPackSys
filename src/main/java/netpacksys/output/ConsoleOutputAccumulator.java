@@ -1,4 +1,4 @@
-package netpacksys;
+package netpacksys.output;
 
 import java.io.PrintWriter;
 import java.util.ArrayList;

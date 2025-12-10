@@ -1,4 +1,12 @@
-package netpacksys;
+package netpacksys.parser;
+
+import netpacksys.DelayInfo;
+import netpacksys.PacketContext;
+import netpacksys.TransportInfo;
+
+import java.nio.charset.StandardCharsets;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 import java.nio.charset.StandardCharsets;
 import java.util.LinkedHashMap;

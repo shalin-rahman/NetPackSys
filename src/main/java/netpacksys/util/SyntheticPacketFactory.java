@@ -1,4 +1,6 @@
-package netpacksys;
+package netpacksys.util;
+
+import netpacksys.PcapPacketStub;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

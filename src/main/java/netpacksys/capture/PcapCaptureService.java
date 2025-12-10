@@ -1,4 +1,6 @@
-package netpacksys;
+package netpacksys.capture;
+
+import netpacksys.PcapPacketStub;
 
 import org.pcap4j.core.PcapHandle;
 import org.pcap4j.core.PcapNativeException;

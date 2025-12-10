@@ -1,9 +1,13 @@
-package netpacksys;
+package netpacksys.parser;
+
+import netpacksys.DelayInfo;
+import netpacksys.PacketContext;
+import netpacksys.PcapPacketStub;
 
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
-import java.util.Map;
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 public final class FrameParser implements LayerParser {
     private final String usedNetwork;

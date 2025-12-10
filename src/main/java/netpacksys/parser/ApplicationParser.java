@@ -1,4 +1,9 @@
-package netpacksys;
+package netpacksys.parser;
+
+import netpacksys.PacketContext;
+import netpacksys.TransportInfo;
+
+import java.util.Map;
 
 import java.util.Map;
 

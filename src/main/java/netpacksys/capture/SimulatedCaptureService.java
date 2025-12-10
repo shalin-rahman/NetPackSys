@@ -1,4 +1,9 @@
-package netpacksys;
+package netpacksys.capture;
+
+import netpacksys.PcapPacketStub;
+import netpacksys.util.SyntheticPacketFactory;
+
+import java.time.Instant;
 
 public final class SimulatedCaptureService implements CaptureService {
     private volatile boolean closed = false;

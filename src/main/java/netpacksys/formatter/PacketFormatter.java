@@ -1,4 +1,8 @@
-package netpacksys;
+package netpacksys.formatter;
+
+import netpacksys.PacketContext;
+
+import java.util.List;
 
 import java.util.List;
 

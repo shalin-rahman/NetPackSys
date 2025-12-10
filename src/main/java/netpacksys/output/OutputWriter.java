@@ -1,4 +1,4 @@
-package netpacksys;
+package netpacksys.output;
 
 import java.io.Closeable;
 import java.util.List;

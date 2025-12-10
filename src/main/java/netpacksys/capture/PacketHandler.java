@@ -1,4 +1,6 @@
-package netpacksys;
+package netpacksys.capture;
+
+import netpacksys.PcapPacketStub;
 
 public interface PacketHandler {
     /**
