@@ -38,6 +38,8 @@
     </dependencies>
 
     <build>
+        <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>src/tests</testSourceDirectory>
         <plugins>
 
             <!-- Compiler plugin for Java 21 -->
@@ -47,6 +49,10 @@
                 <version>3.11.0</version>
                 <configuration>
                     <release>21</release>
+                    <excludes>
+                        <exclude>ui-fx/**</exclude>
+                        <exclude>tests/**</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
 
@@ -65,7 +71,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>netpacksys.PacketAnalyzer</mainClass>
+                            <mainClass>core.PacketAnalyzer</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

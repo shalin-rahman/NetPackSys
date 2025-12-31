@@ -78,26 +78,30 @@ The analyzer follows modular OOP design guided by SOLID principles. Each compone
 
 ---
 
+# Architecture & Directory Structure
+The project has been refactored for clarity and modularity (replacing the old `netpacksys` package structure):
+
+*   **`src/core/`**: Core analyzer logic (Package: `core`).
+*   **`src/tests/`**: Unit tests for the core analyzer (Package: `core`).
+*   **`src/ui-fx/`**: JavaFX Log Viewer module (Package: `processor`, `presenter`, `service`).
+
 # Building & Testing
 
 ## Core module
-1) Ensure JDK 21 is available. On Windows PowerShell you can set it for the current session:
-```powershell
-./scripts/setup-java.ps1              # auto-detect common JDK21 paths
-# or specify explicitly
-./scripts/setup-java.ps1 -JdkPath "C:\path\to\jdk-21"
-```
+1) Ensure JDK 21+ is available.
 2) Run tests:
 ```bash
-mvn test
+mvn clean test
 ```
-3) Package:
+3) Package and Run:
 ```bash
 mvn package
+java -jar target/NetPackSys-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 
 ## JavaFX viewer (independent module)
-```
-cd ui-fx
-mvn -DskipTests compile javafx:run
+```powershell
+cd src/ui-fx
+mvn clean test
+mvn javafx:run
 ```
