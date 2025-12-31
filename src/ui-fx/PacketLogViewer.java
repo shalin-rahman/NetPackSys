@@ -6,6 +6,7 @@ import javafx.concurrent.Task;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
@@ -24,6 +25,7 @@ import service.FileLogFileService;
 
 import java.awt.Desktop;
 import java.io.File;
+import java.io.FileInputStream;
 import java.util.List;
 import java.util.Set;
 import java.util.Collections;
@@ -39,6 +41,20 @@ public class PacketLogViewer extends Application {
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
         
+        // Set application icon
+        try {
+            // Looking for icon in the root or local directory
+            File iconFile = new File("../../nps_icon.png");
+            if (!iconFile.exists()) {
+                iconFile = new File("nps_icon.png");
+            }
+            if (iconFile.exists()) {
+                primaryStage.getIcons().add(new Image(new FileInputStream(iconFile)));
+            }
+        } catch (Exception e) {
+            System.err.println("Could not load application icon: " + e.getMessage());
+        }
+
         logPresenter = new LogPresenter(
             new FileLogFileService(),
             new SummaryLogProcessor(),
@@ -77,7 +93,7 @@ public class PacketLogViewer extends Application {
         mainLayout.setCenter(mainSplitPane);
         
         Scene mainScene = new Scene(mainLayout, 1000, 800);
-        primaryStage.setTitle("NetPackSys - Packet Log Viewer");
+        primaryStage.setTitle("NetPackSys - Network Packet Capture and Delay Analysis System");
         primaryStage.setScene(mainScene);
         primaryStage.show();
         
