@@ -99,9 +99,18 @@ mvn package
 java -jar target/NetPackSys-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 
-## JavaFX viewer (independent module)
+## JavaFX Viewer (UI)
+The UI module allows for interactive packet capture and analysis.
+
+### Running with Administrator Privileges (Required for Live Capture)
 ```powershell
 cd src/ui-fx
-mvn clean test
-mvn javafx:run
+.\run_admin.ps1
+```
+*This script will request elevation via UAC.*
+
+### Running via Maven (Simulation Mode only)
+```powershell
+cd src/ui-fx
+mvn clean javafx:run
 ```

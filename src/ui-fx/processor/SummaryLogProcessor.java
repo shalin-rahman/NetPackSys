@@ -3,7 +3,7 @@ package processor;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SummaryLogProcessor implements LogProcessor {
+public class SummaryLogProcessor implements LogProcessor<String> {
     
     @Override
     public List<String> process(List<String> lines) {

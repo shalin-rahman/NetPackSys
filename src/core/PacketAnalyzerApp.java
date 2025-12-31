@@ -62,10 +62,11 @@ public final class PacketAnalyzerApp {
         final StructuredBatchExecutor finalExecutor = this.executor;
         final PacketProcessor finalProcessor = this.processor;
 
-        try (CaptureService cap = capture; FileOutputWriter fw = fileWriter) {
+        try (CaptureService cap = capture) {
             Future<Void> captureFuture = captureExecutor.submit(() -> {
                 try {
                     capture.startCapture(packet -> {
+                        // ... (same as before)
                         if (System.currentTimeMillis() > deadline) {
                             return false;
                         }
@@ -85,6 +86,7 @@ public final class PacketAnalyzerApp {
             });
 
             while (!captureFuture.isDone()) {
+               // ...
                 long remainingSec = (deadline - System.currentTimeMillis() + 999) / 1000;
                 if (remainingSec < 0) remainingSec = 0;
 
@@ -112,6 +114,13 @@ public final class PacketAnalyzerApp {
         } finally {
             captureExecutor.shutdownNow();
             executor.shutdownAndAwait();
+            
+            // Close file writer AFTER tasks complete
+            try {
+                fileWriter.close();
+            } catch (Exception e) {
+                System.err.println("Error closing file writer: " + e.getMessage());
+            }
 
             long totalPackets = count.get();
             long filteredPackets = processor.getFilteredPacketCount();

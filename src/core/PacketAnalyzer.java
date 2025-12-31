@@ -50,9 +50,6 @@ public class PacketAnalyzer {
             if (durationSec <= 0) durationSec = 10;
         }
 
-        if (protocolsCSV == null) {
-            protocolsCSV = "ALL";
-        }
         if (durationSec <= 0) {
             durationSec = 10;
         }
@@ -60,12 +57,8 @@ public class PacketAnalyzer {
             initialSelection = "sim";
         }
 
-        final Set<String> protocols = Arrays.stream(protocolsCSV.split(","))
-                .map(String::trim).map(String::toUpperCase).collect(Collectors.toSet());
-        if (protocols.contains("TLS")) {
-            protocols.remove("TLS");
-            protocols.add("HTTPS");
-        }
+        final Set<String> protocols = Config.parseProtocols(protocolsCSV);
+
 
         System.out.printf(" Protocols selected: %s (Output logged to console AND %s)%n", protocols, OUTPUT_FILE);
 
