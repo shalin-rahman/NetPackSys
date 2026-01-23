@@ -5,15 +5,29 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     exit
 }
 
-# Set JAVA_HOME
-$env:JAVA_HOME = "C:\Users\HabiburRahmanShalin\.jdks\openjdk-25.0.1"
+# Use existing JAVA_HOME, or try common locations. Edit the line below if Java is elsewhere.
+if (-not $env:JAVA_HOME) {
+    $candidates = @(
+        "C:\Program Files\Java\jdk-21",
+        "C:\Program Files\Java\jdk-22",
+        "C:\Program Files\Eclipse Adoptium\jdk-21*",
+        "$env:USERPROFILE\.jdks\openjdk-21*",
+        "$env:USERPROFILE\.jdks\openjdk-22*"
+    )
+    foreach ($d in $candidates) {
+        $resolved = (Get-Item $d -ErrorAction SilentlyContinue | Select-Object -First 1)
+        if ($resolved) { $env:JAVA_HOME = $resolved.FullName; break }
+    }
+}
+if ($env:JAVA_HOME) { $env:PATH = "$env:JAVA_HOME\bin;$env:PATH" }
 
-# Ensure Maven is in PATH
+# Ensure Maven is in PATH (use 'mvn' from your normal user PATH if available)
 if (!(Get-Command mvn -ErrorAction SilentlyContinue)) {
-    # Attempt to add standard Maven path if not found
-    $env:PATH = "$env:JAVA_HOME\bin;C:\apache-maven-3.9.11-bin\apache-maven-3.9.11\bin;$env:PATH"
-} else {
-    $env:PATH = "$env:JAVA_HOME\bin;$env:PATH"
+    $mavenPaths = "C:\Program Files\apache-maven-*\bin", "C:\apache-maven-*\bin", "$env:USERPROFILE\apache-maven-*\bin"
+    foreach ($p in $mavenPaths) {
+        $mp = (Get-Item $p -ErrorAction SilentlyContinue | Select-Object -First 1)
+        if ($mp) { $env:PATH = "$($mp.FullName);$env:PATH"; break }
+    }
 }
 
 # Navigate to script directory

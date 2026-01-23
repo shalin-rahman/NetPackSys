@@ -25,13 +25,46 @@ A JavaFX-based Graphical User Interface for the **NetPackSys** Network Analyzer.
 
 ## Running the Application
 
-### Option 1: Live Capture (Recommended)
-To capture packets from a real network interface, you must run the application as Administrator. A helper script is provided:
+### Prerequisite: Install the Core
+
+This UI depends on the **NetPackSys** core JAR. You **must** build and install it from the **project root** first:
+
+```powershell
+cd c:\Users\Admin\Desktop\NetPackSys
+mvn clean install -DskipTests
+```
+
+Then `cd src\ui-fx` and run the commands below.
+
+### Option 1: Live Capture (Run as Administrator)
+
+To capture packets from a real network interface, you **must** run the app as **Administrator**. Two ways:
+
+#### A. Helper script (elevates automatically)
+
+From `src\ui-fx`:
 
 ```powershell
 .\run_admin.ps1
 ```
-*Accept the UAC prompt to launch the analyzer with elevated privileges.*
+
+- A **UAC prompt** will ask “Do you want to allow this app to make changes?” → click **Yes**.
+- A new elevated PowerShell window opens and starts the UI. Use that window; you can ignore the original one.
+
+**If the script fails** (e.g. “mvn not found” or “java not found”): when run as Admin, PATH can differ. Edit `run_admin.ps1` and set `JAVA_HOME` to your JDK folder (e.g. `C:\Program Files\Java\jdk-21`) and ensure Maven’s `bin` is on `PATH`, then run the script again.
+
+#### B. Manual “Run as Administrator”
+
+1. Close any existing PowerShell/CMD.
+2. **Right‑click** **Windows PowerShell** or **Command Prompt** → **Run as administrator**.
+3. In the new window:
+   ```powershell
+   cd c:\Users\Admin\Desktop\NetPackSys
+   mvn clean install -DskipTests
+   cd src\ui-fx
+   mvn clean javafx:run
+   ```
+4. The UI runs with admin rights; live capture will work.
 
 ### Option 2: Maven (Development/Simulation)
 If you only need to run "Simulation Mode" or view existing logs:
