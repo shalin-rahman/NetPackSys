@@ -58,6 +58,14 @@
     <build>
         <sourceDirectory>.</sourceDirectory>
         <testSourceDirectory>tests</testSourceDirectory>
+        <resources>
+            <resource>
+                <directory>.</directory>
+                <includes>
+                    <include>*.css</include>
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

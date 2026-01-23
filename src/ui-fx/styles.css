@@ -1,0 +1,228 @@
+/* NetPackSys – Professional UI Theme */
+
+/* ---- Root & typography ---- */
+.root {
+    -fx-font-family: "Segoe UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+    -fx-font-size: 13px;
+    -fx-base: #f8fafc;
+    -fx-background: #f1f5f9;
+    -fx-control-inner-background: #ffffff;
+    -fx-accent: #0f766e;
+    -fx-focus-color: #0d9488;
+}
+
+/* ---- App header / toolbar ---- */
+.app-header {
+    -fx-background-color: linear-gradient(to bottom, #0f172a 0%, #1e293b 100%);
+    -fx-padding: 12 20 12 20;
+    -fx-spacing: 12;
+}
+
+.app-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f8fafc;
+}
+
+.app-subtitle {
+    -fx-font-size: 11px;
+    -fx-text-fill: #94a3b8;
+}
+
+.toolbar {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10 16 10 16;
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.06), 4, 0, 0, 1);
+}
+
+/* ---- Buttons ---- */
+.button {
+    -fx-background-radius: 6px;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+    -fx-font-weight: 600;
+}
+
+.button-primary {
+    -fx-background-color: linear-gradient(to bottom, #0f766e 0%, #0d9488 100%);
+    -fx-text-fill: white;
+    -fx-background-radius: 6px;
+}
+
+.button-primary:hover {
+    -fx-background-color: linear-gradient(to bottom, #0d9488 0%, #14b8a6 100%);
+}
+
+.button-primary:pressed {
+    -fx-background-color: #0f766e;
+}
+
+.button-secondary {
+    -fx-background-color: #e2e8f0;
+    -fx-text-fill: #334155;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #cbd5e1;
+}
+
+.button-secondary:pressed {
+    -fx-background-color: #94a3b8;
+}
+
+/* ---- Sections ---- */
+.section {
+    -fx-background-color: #ffffff;
+    -fx-padding: 16;
+    -fx-spacing: 8;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 6, 0, 0, 1);
+}
+
+.section-title {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #475569;
+    -fx-padding: 0 0 6 0;
+}
+
+/* ---- Table ---- */
+.packet-table {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 6px;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 6px;
+}
+
+.packet-table .column-header {
+    -fx-background-color: linear-gradient(to bottom, #f8fafc 0%, #f1f5f9 100%);
+    -fx-padding: 10 12 10 12;
+    -fx-font-weight: 600;
+    -fx-font-size: 12px;
+    -fx-text-fill: #334155;
+    -fx-border-color: transparent transparent #e2e8f0 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.packet-table .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.packet-table .table-row-cell:odd {
+    -fx-background-color: #fafafa;
+}
+
+.packet-table .table-row-cell:even {
+    -fx-background-color: #ffffff;
+}
+
+.packet-table .table-row-cell:selected {
+    -fx-background-color: #ccfbf1;
+}
+
+.packet-table .table-row-cell:selected .text {
+    -fx-fill: #134e4a;
+}
+
+.packet-table .table-cell {
+    -fx-padding: 8 12 8 12;
+    -fx-font-size: 12px;
+    -fx-text-fill: #334155;
+}
+
+.packet-table .table-row-cell:hover {
+    -fx-background-color: #f0fdfa;
+}
+
+/* ---- Split pane ---- */
+.split-pane {
+    -fx-background-color: transparent;
+}
+
+.split-pane-divider {
+    -fx-background-color: #e2e8f0;
+    -fx-padding: 0 2 0 2;
+}
+
+/* ---- Text area (details) ---- */
+.details-area {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 6px;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 6px;
+    -fx-padding: 12;
+    -fx-font-family: "Cascadia Code", "Consolas", "Monaco", monospace;
+    -fx-font-size: 12px;
+    -fx-text-fill: #334155;
+    -fx-control-inner-background: #f8fafc;
+}
+
+/* ---- Status bar ---- */
+.status-bar {
+    -fx-background-color: #e2e8f0;
+    -fx-padding: 6 16 6 16;
+    -fx-font-size: 11px;
+    -fx-text-fill: #64748b;
+    -fx-border-color: #cbd5e1 transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+}
+.status-bar .label {
+    -fx-text-fill: #64748b;
+}
+
+/* ---- Dialog ---- */
+.dialog-pane {
+    -fx-background-color: #ffffff;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: linear-gradient(to bottom, #0f172a 0%, #1e293b 100%);
+    -fx-padding: 16 20 16 20;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f8fafc;
+}
+
+.dialog-pane .content {
+    -fx-padding: 20 24 16 24;
+    -fx-spacing: 12;
+}
+
+.dialog-pane .content .label {
+    -fx-text-fill: #475569;
+    -fx-font-weight: 600;
+}
+
+.dialog-hint {
+    -fx-font-size: 11px;
+    -fx-text-fill: #64748b;
+    -fx-padding: 4 0 0 0;
+}
+
+.dialog-hint-warning {
+    -fx-text-fill: #b45309;
+}
+
+/* ---- Inputs ---- */
+.text-field, .combo-box {
+    -fx-background-radius: 6px;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 6px;
+    -fx-padding: 8 12 8 12;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #0d9488;
+    -fx-effect: dropshadow(gaussian, rgba(13, 148, 136, 0.2), 4, 0, 0, 0);
+}
+
+/* ---- Alert / Progress ---- */
+.alert .content {
+    -fx-font-size: 13px;
+    -fx-text-fill: #334155;
+}
