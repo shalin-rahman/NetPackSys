@@ -1,6 +1,8 @@
 # Packet Log Viewer (UI-FX)
 
-A JavaFX-based Graphical User Interface for the **NetPackSys** Network Analyzer. This application allows users to capture live network traffic, view real-time packet statistics, and analyze nodal delays in a structured tabular format.
+JavaFX GUI for the **NetPackSys** network analyzer: capture live traffic (or use Simulation), view packet tables, and inspect delay analysis.
+
+**First time?** Use the project’s step-by-step guide: **[GETTING-STARTED.md](../../GETTING-STARTED.md)** (from project root).
 
 ## Features
 
@@ -25,53 +27,45 @@ A JavaFX-based Graphical User Interface for the **NetPackSys** Network Analyzer.
 
 ## Running the Application
 
-### Prerequisite: Install the Core
+### Step-by-step (from project root)
 
-This UI depends on the **NetPackSys** core JAR. You **must** build and install it from the **project root** first:
+1. Open PowerShell and go to the project root (folder with `pom.xml`).
+2. Set Java: `.\scripts\setup-java.ps1 -JdkPath "C:\path\to\jdk-21"`
+3. Install core: `mvn clean install -DskipTests`
+4. Go to UI folder: `cd src\ui-fx`
+5. Start GUI: `mvn clean javafx:run`
 
-```powershell
-cd c:\Users\Admin\Desktop\NetPackSys
-mvn clean install -DskipTests
-```
+### Option A: Script from project root
 
-Then `cd src\ui-fx` and run the commands below.
-
-### Option 1: Live Capture (Run as Administrator)
-
-To capture packets from a real network interface, you **must** run the app as **Administrator**. Two ways:
-
-#### A. Helper script (elevates automatically)
-
-From `src\ui-fx`:
-
-```powershell
-.\run_admin.ps1
-```
+From **project root**: `.\scripts\run-ui.ps1`  
+For **live capture** (as Administrator): `.\scripts\run-ui.ps1 -RunAsAdmin` (UAC → Yes).
 
 - A **UAC prompt** will ask “Do you want to allow this app to make changes?” → click **Yes**.
 - A new elevated PowerShell window opens and starts the UI. Use that window; you can ignore the original one.
 
-**If the script fails** (e.g. “mvn not found” or “java not found”): when run as Admin, PATH can differ. Edit `run_admin.ps1` and set `JAVA_HOME` to your JDK folder (e.g. `C:\Program Files\Java\jdk-21`) and ensure Maven’s `bin` is on `PATH`, then run the script again.
+**If the script fails** (e.g. “mvn not found” or “java not found”): when run as Admin, PATH can differ. Edit `scripts\run-ui.ps1` and set `JAVA_HOME` to your JDK folder (e.g. `C:\Program Files\Java\jdk-21`) and ensure Maven’s `bin` is on `PATH`, then run the script again.
 
-#### B. Manual “Run as Administrator”
+### Option B: Run as Administrator manually
 
-1. Close any existing PowerShell/CMD.
-2. **Right‑click** **Windows PowerShell** or **Command Prompt** → **Run as administrator**.
-3. In the new window:
-   ```powershell
-   cd c:\Users\Admin\Desktop\NetPackSys
-   mvn clean install -DskipTests
-   cd src\ui-fx
-   mvn clean javafx:run
-   ```
-4. The UI runs with admin rights; live capture will work.
+1. Right‑click **PowerShell** → **Run as administrator**.
+2. In the new window: cd to project root, then run `mvn install -DskipTests`, then `cd src\ui-fx`, then `mvn javafx:run`.
 
-### Option 2: Maven (Development/Simulation)
-If you only need to run "Simulation Mode" or view existing logs:
+### Option C: Run the EXE (always asks for Administrator)
+
+You can build a **NetPackSys.exe** that **always prompts for Administrator** when double‑clicked (UAC). No need to right‑click “Run as administrator”.
+
+From the **project root** (with `JAVA_HOME` set, e.g. via `scripts\setup-java.ps1`):
 
 ```powershell
-mvn clean javafx:run
+.\scripts\build-exe.ps1
 ```
+
+Output:
+
+- `src\ui-fx\target\dist\NetPackSys.exe` — the launcher (run this)
+- `src\ui-fx\target\dist\lib\` — required JARs (must stay next to the exe)
+
+**To use:** Copy the whole **dist** folder (exe + **lib** folder) to any location. Double‑click **NetPackSys.exe**; Windows will show the UAC prompt, then the app starts with admin rights so live capture works.
 
 ## Architecture
 

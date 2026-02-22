@@ -292,7 +292,11 @@ public class PacketLogViewer extends Application {
             grid.add(new Label("Output file"), 0, 3);
             grid.add(outputFileTextField, 1, 3);
 
-            Label adminHint = new Label("Administrator privileges required for live capture.");
+            Label adminHint = new Label(
+                    "Live capture requires running the app as Administrator (right‑click shortcut → Run as administrator). " +
+                    "Use \"Simulation mode\" if you cannot elevate, or to test without admin.");
+            adminHint.setWrapText(true);
+            adminHint.setMaxWidth(420);
             adminHint.getStyleClass().addAll("dialog-hint", "dialog-hint-warning");
             grid.add(adminHint, 1, 4);
 
@@ -339,7 +343,11 @@ public class PacketLogViewer extends Application {
         Alert progressAlert = new Alert(Alert.AlertType.INFORMATION);
         progressAlert.setTitle("Capturing…");
         progressAlert.setHeaderText("Packet capture in progress");
-        progressAlert.setContentText("Capture on " + configuration.iface() + " for " + configuration.durationSec() + " s…");
+        boolean isSim = "sim".equalsIgnoreCase(configuration.iface());
+        progressAlert.setContentText(
+                isSim ? "Simulation running for " + configuration.durationSec() + " s…"
+                        : "Capture on " + configuration.iface() + " for " + configuration.durationSec() + " s… " +
+                          "If this hangs, exit and run the app as Administrator.");
         progressAlert.initModality(Modality.WINDOW_MODAL);
         progressAlert.initOwner(primaryStage);
         progressAlert.getDialogPane().lookupButton(ButtonType.OK).setDisable(true);

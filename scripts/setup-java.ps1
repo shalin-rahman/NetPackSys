@@ -21,6 +21,8 @@ if ($JdkPath) {
     }
 } else {
     $candidates = @(
+        "$env:USERPROFILE\.jdks\openjdk-25",
+        "$env:USERPROFILE\.jdks\openjdk-21",
         "C:\Program Files\Java\jdk-21",
         "C:\Program Files\Eclipse Adoptium\jdk-21",
         "C:\Program Files\Microsoft\jdk-21",

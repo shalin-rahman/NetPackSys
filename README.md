@@ -79,38 +79,46 @@ The analyzer follows modular OOP design guided by SOLID principles. Each compone
 ---
 
 # Architecture & Directory Structure
-The project has been refactored for clarity and modularity (replacing the old `netpacksys` package structure):
 
-*   **`src/core/`**: Core analyzer logic (Package: `core`).
-*   **`src/tests/`**: Unit tests for the core analyzer (Package: `core`).
-*   **`src/ui-fx/`**: JavaFX Log Viewer module (Package: `processor`, `presenter`, `service`).
+The project is split into:
 
-# Building & Testing
+| Path | Purpose |
+|------|--------|
+| **`src/core/`** | Core analyzer logic (package `core`). |
+| **`src/tests/`** | Unit tests for the core (package `core`). |
+| **`src/ui-fx/`** | JavaFX Log Viewer (GUI). |
+| **`scripts/`** | Helper scripts to set Java, run tests, run UI, build EXE. |
 
-## Core module
-1) Ensure JDK 21+ is available.
-2) Run tests:
-```bash
-mvn clean test
-```
-3) Package and Run:
-```bash
-mvn package
-java -jar target/NetPackSys-1.0-SNAPSHOT-jar-with-dependencies.jar
-```
+# How to Run – Quick Start
 
-## JavaFX Viewer (UI)
-The UI module allows for interactive packet capture and analysis.
+**New to the project?** Use the step-by-step guide: **[GETTING-STARTED.md](GETTING-STARTED.md)**.
 
-### Running with Administrator Privileges (Required for Live Capture)
-```powershell
-cd src/ui-fx
-.\run_admin.ps1
-```
-*This script will request elevation via UAC.*
+**Already set up?** Summary:
 
-### Running via Maven (Simulation Mode only)
-```powershell
-cd src/ui-fx
-mvn clean javafx:run
-```
+1. **Set Java (PowerShell, one-time per session):**
+   ```powershell
+   .\scripts\setup-java.ps1 -JdkPath "C:\path\to\jdk-21"
+   ```
+2. **Run tests (project root):**
+   ```powershell
+   mvn clean test
+   ```
+3. **Run console app (project root):**
+   ```powershell
+   mvn package -DskipTests
+   java -jar target\NetPackSys-1.0-SNAPSHOT-jar-with-dependencies.jar
+   ```
+4. **Run GUI (project root):**
+   ```powershell
+   mvn install -DskipTests
+   cd src\ui-fx
+   mvn javafx:run
+   ```
+   Or use the script: `.\scripts\run-ui.ps1` (and `-RunAsAdmin` for live capture).
+5. **Build EXE (always asks for Administrator):**
+   ```powershell
+   .\scripts\build-exe.ps1
+   ```
+   Then run `src\ui-fx\target\dist\NetPackSys.exe` (keep the `lib` folder next to it).
+
+For full, line-by-line steps and troubleshooting, see **[GETTING-STARTED.md](GETTING-STARTED.md)**.
