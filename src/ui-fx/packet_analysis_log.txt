@@ -1,1 +1,400 @@
-﻿
+﻿DELAY_SUMMARY	TotalNodalDelay=7.527669 ms	TotalProcessingDelay=1.658673 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=3.354296 ms	ProcessingPercent=22.0%	TransmissionPercent=0.2%	PropagationPercent=33.2%	QueuingPercent=44.6%	Bottleneck=Queuing
+----
+FRAME	FrameNo=1	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:06.743227000Z	ProcessingDelay=1.064500 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=1.064500 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.080833 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.083549 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.080500 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.076 ms	TotalDelay=4.667813 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.053625 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.134 ms	TotalDelay=0.189824 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.379215 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=1.143 ms	TotalDelay=1.521984 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.123424 ms	TotalProcessingDelay=0.750709 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.865791 ms	ProcessingPercent=18.2%	TransmissionPercent=0.1%	PropagationPercent=60.7%	QueuingPercent=21.0%	Bottleneck=Propagation
+----
+FRAME	FrameNo=2	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:06.948681000Z	ProcessingDelay=0.179542 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.179542 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.208459 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.210527 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.115000 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.461 ms	TotalDelay=3.080480 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.038708 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.142 ms	TotalDelay=0.182250 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.209000 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.262 ms	TotalDelay=0.470625 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.774640 ms	TotalProcessingDelay=1.049209 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.213227 ms	ProcessingPercent=22.0%	TransmissionPercent=0.2%	PropagationPercent=52.4%	QueuingPercent=25.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=3	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:07.151548000Z	ProcessingDelay=0.170541 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.170541 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.331208 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.333716 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.142917 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.727 ms	TotalDelay=3.379210 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.059459 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.111 ms	TotalDelay=0.172006 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.345084 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.374 ms	TotalDelay=0.719167 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.656626 ms	TotalProcessingDelay=0.884583 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.257344 ms	ProcessingPercent=15.6%	TransmissionPercent=0.2%	PropagationPercent=44.2%	QueuingPercent=39.9%	Bottleneck=Propagation
+----
+FRAME	FrameNo=4	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:07.356424000Z	ProcessingDelay=0.145209 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.145209 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.315083 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.317799 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.124500 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.078 ms	TotalDelay=3.713183 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.088875 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.054 ms	TotalDelay=0.145300 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.210916 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=1.124 ms	TotalDelay=1.335136 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.897650 ms	TotalProcessingDelay=0.582877 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.807849 ms	ProcessingPercent=11.9%	TransmissionPercent=0.1%	PropagationPercent=51.1%	QueuingPercent=36.9%	Bottleneck=Propagation
+----
+FRAME	FrameNo=5	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:07.560208000Z	ProcessingDelay=0.145042 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.145042 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.188375 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.190443 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.120917 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.634 ms	TotalDelay=4.259241 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.027084 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.068 ms	TotalDelay=0.096833 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.101459 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.105 ms	TotalDelay=0.206091 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.215621 ms	TotalProcessingDelay=0.590209 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.113208 ms	ProcessingPercent=14.0%	TransmissionPercent=0.3%	PropagationPercent=59.3%	QueuingPercent=26.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=6	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:07.763570000Z	ProcessingDelay=0.131208 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.131208 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.118292 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.120800 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.079750 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.271 ms	TotalDelay=2.860140 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.043209 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.051 ms	TotalDelay=0.095940 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.217750 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.790 ms	TotalDelay=1.007532 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.941803 ms	TotalProcessingDelay=0.367091 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.060012 ms	ProcessingPercent=7.4%	TransmissionPercent=0.3%	PropagationPercent=50.6%	QueuingPercent=41.7%	Bottleneck=Propagation
+----
+FRAME	FrameNo=7	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:07.968734000Z	ProcessingDelay=0.036875 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.036875 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.058750 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.061466 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.078000 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.793 ms	TotalDelay=3.382173 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.033542 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.085 ms	TotalDelay=0.120318 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.159924 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=1.181 ms	TotalDelay=1.340972 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.235469 ms	TotalProcessingDelay=0.255375 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.473170 ms	ProcessingPercent=6.0%	TransmissionPercent=0.1%	PropagationPercent=59.1%	QueuingPercent=34.8%	Bottleneck=Propagation
+----
+FRAME	FrameNo=8	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:08.168975000Z	ProcessingDelay=0.045208 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.045208 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.054792 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.056860 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.074500 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.269 ms	TotalDelay=3.848508 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.014625 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.052 ms	TotalDelay=0.067469 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.066250 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.151 ms	TotalDelay=0.217423 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.396300 ms	TotalProcessingDelay=0.877958 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.006138 ms	ProcessingPercent=16.3%	TransmissionPercent=0.2%	PropagationPercent=46.4%	QueuingPercent=37.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=9	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:08.369565000Z	ProcessingDelay=0.193583 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.193583 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.257667 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.260175 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.110333 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.376 ms	TotalDelay=3.995542 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.078541 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.083 ms	TotalDelay=0.163271 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.237834 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.546 ms	TotalDelay=0.783728 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.957778 ms	TotalProcessingDelay=0.664172 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.778905 ms	ProcessingPercent=13.4%	TransmissionPercent=0.3%	PropagationPercent=50.5%	QueuingPercent=35.9%	Bottleneck=Propagation
+----
+FRAME	FrameNo=10	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:08.574573000Z	ProcessingDelay=0.158042 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.158042 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.121083 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.123799 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.081042 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.976 ms	TotalDelay=3.568015 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.054208 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.145 ms	TotalDelay=0.201343 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.249797 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.657 ms	TotalDelay=0.906579 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.730804 ms	TotalProcessingDelay=0.372542 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.851338 ms	ProcessingPercent=7.9%	TransmissionPercent=0.1%	PropagationPercent=52.9%	QueuingPercent=39.1%	Bottleneck=Propagation
+----
+FRAME	FrameNo=11	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:08.779555000Z	ProcessingDelay=0.098625 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.098625 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.085167 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.087235 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.098125 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.476 ms	TotalDelay=4.078466 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.018833 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.121 ms	TotalDelay=0.141015 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.071792 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.254 ms	TotalDelay=0.325463 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.049861 ms	TotalProcessingDelay=0.906459 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.631198 ms	ProcessingPercent=18.0%	TransmissionPercent=0.2%	PropagationPercent=49.5%	QueuingPercent=32.3%	Bottleneck=Propagation
+----
+FRAME	FrameNo=12	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:08.984854000Z	ProcessingDelay=0.194375 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.194375 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.256875 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.259383 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.156375 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.882 ms	TotalDelay=3.547208 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.068917 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.053 ms	TotalDelay=0.123862 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.229917 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.695 ms	TotalDelay=0.925032 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.525433 ms	TotalProcessingDelay=0.844697 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.166036 ms	ProcessingPercent=15.3%	TransmissionPercent=0.2%	PropagationPercent=45.3%	QueuingPercent=39.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=13	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:09.190185000Z	ProcessingDelay=0.204875 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.204875 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.147583 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.150299 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.121417 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.801 ms	TotalDelay=4.433251 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.072584 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.101 ms	TotalDelay=0.175847 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.298238 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.263 ms	TotalDelay=0.561161 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.116797 ms	TotalProcessingDelay=0.493292 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.116581 ms	ProcessingPercent=12.0%	TransmissionPercent=0.1%	PropagationPercent=60.8%	QueuingPercent=27.1%	Bottleneck=Propagation
+----
+FRAME	FrameNo=14	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:09.394799000Z	ProcessingDelay=0.137292 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.137292 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.153750 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.155818 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.090875 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.910 ms	TotalDelay=3.505725 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.025084 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.059 ms	TotalDelay=0.085294 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.086291 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.146 ms	TotalDelay=0.232668 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.731397 ms	TotalProcessingDelay=0.695125 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.524068 ms	ProcessingPercent=14.7%	TransmissionPercent=0.2%	PropagationPercent=52.9%	QueuingPercent=32.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=15	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:09.600100000Z	ProcessingDelay=0.157833 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.157833 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.194875 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.197383 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.077250 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.895 ms	TotalDelay=3.480730 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.049625 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.079 ms	TotalDelay=0.130127 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.215542 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.550 ms	TotalDelay=0.765324 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.361618 ms	TotalProcessingDelay=0.808660 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.038258 ms	ProcessingPercent=18.5%	TransmissionPercent=0.3%	PropagationPercent=57.4%	QueuingPercent=23.8%	Bottleneck=Propagation
+----
+FRAME	FrameNo=16	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:09.804341000Z	ProcessingDelay=0.152875 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.152875 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.128459 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.131175 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.079542 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.324 ms	TotalDelay=2.914152 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.042667 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.093 ms	TotalDelay=0.137447 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.405117 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.621 ms	TotalDelay=1.025969 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.427607 ms	TotalProcessingDelay=0.481791 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.438892 ms	ProcessingPercent=8.9%	TransmissionPercent=0.1%	PropagationPercent=46.1%	QueuingPercent=44.9%	Bottleneck=Propagation
+----
+FRAME	FrameNo=17	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:10.007691000Z	ProcessingDelay=0.175458 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.175458 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.114000 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.116068 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.077875 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.048 ms	TotalDelay=4.630881 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.041583 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.128 ms	TotalDelay=0.170918 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.072875 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.261 ms	TotalDelay=0.334282 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.980234 ms	TotalProcessingDelay=0.728500 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.739530 ms	ProcessingPercent=12.2%	TransmissionPercent=0.2%	PropagationPercent=41.8%	QueuingPercent=45.8%	Bottleneck=Queuing
+----
+FRAME	FrameNo=18	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:10.209209000Z	ProcessingDelay=0.158709 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.158709 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.182916 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.185424 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.092292 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.024 ms	TotalDelay=4.625502 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.067375 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.111 ms	TotalDelay=0.180006 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.227208 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.603 ms	TotalDelay=0.830593 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.500592 ms	TotalProcessingDelay=1.095268 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.890623 ms	ProcessingPercent=24.3%	TransmissionPercent=0.3%	PropagationPercent=55.6%	QueuingPercent=19.8%	Bottleneck=Propagation
+----
+FRAME	FrameNo=19	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:10.412041000Z	ProcessingDelay=0.170042 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.170042 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.165959 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.168675 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.079958 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.112 ms	TotalDelay=2.703378 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.052125 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.113 ms	TotalDelay=0.166887 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.627184 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.664 ms	TotalDelay=1.291610 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.245646 ms	TotalProcessingDelay=0.291125 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.447597 ms	ProcessingPercent=6.9%	TransmissionPercent=0.1%	PropagationPercent=58.9%	QueuingPercent=34.1%	Bottleneck=Propagation
+----
+FRAME	FrameNo=20	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:10.614113000Z	ProcessingDelay=0.056541 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.056541 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.080250 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.082318 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.069042 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.137 ms	TotalDelay=3.710433 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.016417 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.103 ms	TotalDelay=0.121025 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.068875 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.206 ms	TotalDelay=0.275329 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.127246 ms	TotalProcessingDelay=0.482959 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.132083 ms	ProcessingPercent=9.4%	TransmissionPercent=0.2%	PropagationPercent=48.8%	QueuingPercent=41.6%	Bottleneck=Propagation
+----
+FRAME	FrameNo=21	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:10.816462000Z	ProcessingDelay=0.064042 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.064042 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.083292 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.085800 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.064666 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.573 ms	TotalDelay=4.146482 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.060542 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.070 ms	TotalDelay=0.132282 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.210417 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.488 ms	TotalDelay=0.698640 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=3.697243 ms	TotalProcessingDelay=0.477710 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.704833 ms	ProcessingPercent=12.9%	TransmissionPercent=0.4%	PropagationPercent=67.7%	QueuingPercent=19.1%	Bottleneck=Propagation
+----
+FRAME	FrameNo=22	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:11.019843000Z	ProcessingDelay=0.075584 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.075584 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.062250 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.064966 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.076458 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.138 ms	TotalDelay=2.725413 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.040625 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.055 ms	TotalDelay=0.097072 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.222793 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.511 ms	TotalDelay=0.734208 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.394967 ms	TotalProcessingDelay=0.410375 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.477668 ms	ProcessingPercent=9.3%	TransmissionPercent=0.1%	PropagationPercent=56.9%	QueuingPercent=33.6%	Bottleneck=Propagation
+----
+FRAME	FrameNo=23	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:11.225009000Z	ProcessingDelay=0.158791 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.158791 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.081500 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.083568 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.090833 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.219 ms	TotalDelay=3.814111 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.015167 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.086 ms	TotalDelay=0.102036 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.064084 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.172 ms	TotalDelay=0.236461 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.959963 ms	TotalProcessingDelay=0.560458 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.887301 ms	ProcessingPercent=9.4%	TransmissionPercent=0.2%	PropagationPercent=42.0%	QueuingPercent=48.4%	Bottleneck=Queuing
+----
+FRAME	FrameNo=24	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:11.427565000Z	ProcessingDelay=0.156292 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.156292 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.078833 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.081341 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.068750 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.070 ms	TotalDelay=4.648023 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.042166 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.134 ms	TotalDelay=0.178306 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.214417 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.682 ms	TotalDelay=0.896001 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.472964 ms	TotalProcessingDelay=1.003405 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.954859 ms	ProcessingPercent=22.4%	TransmissionPercent=0.3%	PropagationPercent=55.9%	QueuingPercent=21.3%	Bottleneck=Propagation
+----
+FRAME	FrameNo=25	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:11.628582000Z	ProcessingDelay=0.156708 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.156708 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.087958 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.090674 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.066958 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.362 ms	TotalDelay=2.939910 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.043333 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.121 ms	TotalDelay=0.166316 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.648448 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.471 ms	TotalDelay=1.119356 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.415391 ms	TotalProcessingDelay=0.552708 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.355759 ms	ProcessingPercent=12.5%	TransmissionPercent=0.1%	PropagationPercent=56.7%	QueuingPercent=30.7%	Bottleneck=Propagation
+----
+FRAME	FrameNo=26	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:11.830449000Z	ProcessingDelay=0.188208 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.188208 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.123541 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.125609 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.136375 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.059 ms	TotalDelay=3.699966 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.022125 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.144 ms	TotalDelay=0.167496 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.082459 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.152 ms	TotalDelay=0.234113 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.290235 ms	TotalProcessingDelay=0.381625 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.396406 ms	ProcessingPercent=8.9%	TransmissionPercent=0.2%	PropagationPercent=58.3%	QueuingPercent=32.5%	Bottleneck=Propagation
+----
+FRAME	FrameNo=27	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:12.031414000Z	ProcessingDelay=0.036208 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.036208 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.035833 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.038341 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.070125 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.559 ms	TotalDelay=3.138260 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.034250 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.054 ms	TotalDelay=0.089879 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.205209 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.782 ms	TotalDelay=0.987547 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.552764 ms	TotalProcessingDelay=0.822753 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.215312 ms	ProcessingPercent=14.8%	TransmissionPercent=0.2%	PropagationPercent=45.0%	QueuingPercent=39.9%	Bottleneck=Propagation
+----
+FRAME	FrameNo=28	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:12.233896000Z	ProcessingDelay=0.161834 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.161834 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.062333 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.065049 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.079916 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.909 ms	TotalDelay=4.499524 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.033167 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.098 ms	TotalDelay=0.133307 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.485503 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.208 ms	TotalDelay=0.693051 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=3.609769 ms	TotalProcessingDelay=0.517375 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.585470 ms	ProcessingPercent=14.3%	TransmissionPercent=0.2%	PropagationPercent=69.3%	QueuingPercent=16.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=29	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:12.437481000Z	ProcessingDelay=0.266167 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.266167 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.078291 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.080359 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.064042 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.193 ms	TotalDelay=2.761558 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.023167 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.118 ms	TotalDelay=0.142273 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.085708 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.274 ms	TotalDelay=0.359412 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.452326 ms	TotalProcessingDelay=0.608916 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.331206 ms	ProcessingPercent=11.2%	TransmissionPercent=0.2%	PropagationPercent=45.9%	QueuingPercent=42.8%	Bottleneck=Propagation
+----
+FRAME	FrameNo=30	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:12.642560000Z	ProcessingDelay=0.197250 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.197250 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.088750 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.091258 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.065583 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.574 ms	TotalDelay=4.148445 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.042417 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.121 ms	TotalDelay=0.165176 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.214916 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.635 ms	TotalDelay=0.850197 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.601769 ms	TotalProcessingDelay=0.835092 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.251978 ms	ProcessingPercent=14.9%	TransmissionPercent=0.2%	PropagationPercent=44.7%	QueuingPercent=40.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=31	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:12.847998000Z	ProcessingDelay=0.167750 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.167750 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.112583 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.115299 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.076292 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.574 ms	TotalDelay=4.161295 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.068625 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.100 ms	TotalDelay=0.170906 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.409842 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.577 ms	TotalDelay=0.986520 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.346318 ms	TotalProcessingDelay=0.448918 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.390476 ms	ProcessingPercent=10.3%	TransmissionPercent=0.1%	PropagationPercent=57.6%	QueuingPercent=32.0%	Bottleneck=Propagation
+----
+FRAME	FrameNo=32	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:13.053597000Z	ProcessingDelay=0.148375 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.148375 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.114917 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.116985 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.083250 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.070 ms	TotalDelay=3.657665 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.024792 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.102 ms	TotalDelay=0.127726 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.077584 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.218 ms	TotalDelay=0.295567 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=3.659848 ms	TotalProcessingDelay=0.371081 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.776563 ms	ProcessingPercent=10.1%	TransmissionPercent=0.3%	PropagationPercent=68.3%	QueuingPercent=21.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=33	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:13.256458000Z	ProcessingDelay=0.043416 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.043416 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.034000 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.036508 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.056458 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.108 ms	TotalDelay=2.673501 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.030166 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.089 ms	TotalDelay=0.121347 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.207041 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.578 ms	TotalDelay=0.785076 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.337524 ms	TotalProcessingDelay=0.854786 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.968038 ms	ProcessingPercent=16.0%	TransmissionPercent=0.2%	PropagationPercent=46.9%	QueuingPercent=36.9%	Bottleneck=Propagation
+----
+FRAME	FrameNo=34	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:13.461689000Z	ProcessingDelay=0.083208 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.083208 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.057542 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.060258 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.061791 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.960 ms	TotalDelay=3.532382 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.036042 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.058 ms	TotalDelay=0.095510 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.616203 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.950 ms	TotalDelay=1.566166 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.705888 ms	TotalProcessingDelay=0.253083 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.945881 ms	ProcessingPercent=5.4%	TransmissionPercent=0.1%	PropagationPercent=53.2%	QueuingPercent=41.3%	Bottleneck=Propagation
+----
+FRAME	FrameNo=35	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:13.663698000Z	ProcessingDelay=0.059375 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.059375 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.059333 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.061401 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.059042 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.661 ms	TotalDelay=4.224268 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.015292 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.076 ms	TotalDelay=0.092507 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.060041 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.208 ms	TotalDelay=0.268337 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.775958 ms	TotalProcessingDelay=0.589542 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.674212 ms	ProcessingPercent=12.3%	TransmissionPercent=0.2%	PropagationPercent=52.4%	QueuingPercent=35.1%	Bottleneck=Propagation
+----
+FRAME	FrameNo=36	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:13.868960000Z	ProcessingDelay=0.142667 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.142667 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.098750 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.101258 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.075375 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.915 ms	TotalDelay=3.499554 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.052667 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.149 ms	TotalDelay=0.202903 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.220083 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.609 ms	TotalDelay=0.829575 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.420135 ms	TotalProcessingDelay=0.694581 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.210854 ms	ProcessingPercent=15.7%	TransmissionPercent=0.3%	PropagationPercent=56.6%	QueuingPercent=27.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=37	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:14.074299000Z	ProcessingDelay=0.215166 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.215166 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.096417 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.099133 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.073417 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.350 ms	TotalDelay=2.934590 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.055416 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.140 ms	TotalDelay=0.197194 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.254165 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.720 ms	TotalDelay=0.974053 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.006220 ms	TotalProcessingDelay=0.521750 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.977546 ms	ProcessingPercent=13.0%	TransmissionPercent=0.1%	PropagationPercent=62.4%	QueuingPercent=24.4%	Bottleneck=Propagation
+----
+FRAME	FrameNo=38	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:14.275157000Z	ProcessingDelay=0.232083 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.232083 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.097459 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.099527 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.089417 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.648 ms	TotalDelay=3.241554 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.023125 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.058 ms	TotalDelay=0.082607 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.079666 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.271 ms	TotalDelay=0.350449 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.255540 ms	TotalProcessingDelay=0.616708 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.126628 ms	ProcessingPercent=14.5%	TransmissionPercent=0.3%	PropagationPercent=58.8%	QueuingPercent=26.5%	Bottleneck=Propagation
+----
+FRAME	FrameNo=39	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:14.476052000Z	ProcessingDelay=0.136166 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.136166 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.121958 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.124466 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.073542 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.313 ms	TotalDelay=2.895030 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.060125 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.084 ms	TotalDelay=0.146325 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.224917 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.729 ms	TotalDelay=0.953553 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.660443 ms	TotalProcessingDelay=0.673511 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.472232 ms	ProcessingPercent=11.9%	TransmissionPercent=0.2%	PropagationPercent=44.2%	QueuingPercent=43.7%	Bottleneck=Propagation
+----
+FRAME	FrameNo=40	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:14.678503000Z	ProcessingDelay=0.149417 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.149417 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.122417 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.125133 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.103208 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.143 ms	TotalDelay=3.757517 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.052916 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.145 ms	TotalDelay=0.200101 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.245553 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=1.183 ms	TotalDelay=1.428276 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.189002 ms	TotalProcessingDelay=0.435624 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.246454 ms	ProcessingPercent=8.4%	TransmissionPercent=0.1%	PropagationPercent=48.2%	QueuingPercent=43.3%	Bottleneck=Propagation
+----
+FRAME	FrameNo=41	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:14.879438000Z	ProcessingDelay=0.145916 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.145916 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.118000 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.120068 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.071958 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.031 ms	TotalDelay=4.607344 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.022375 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.072 ms	TotalDelay=0.095654 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.077375 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.143 ms	TotalDelay=0.220020 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.732956 ms	TotalProcessingDelay=0.625501 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.595251 ms	ProcessingPercent=13.2%	TransmissionPercent=0.2%	PropagationPercent=52.9%	QueuingPercent=33.7%	Bottleneck=Propagation
+----
+FRAME	FrameNo=42	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:15.081249000Z	ProcessingDelay=0.177084 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.177084 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.103250 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.105758 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.071667 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.973 ms	TotalDelay=3.553472 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.054125 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.115 ms	TotalDelay=0.171095 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.219375 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.506 ms	TotalDelay=0.725547 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.149668 ms	TotalProcessingDelay=0.618843 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.016126 ms	ProcessingPercent=12.0%	TransmissionPercent=0.3%	PropagationPercent=48.6%	QueuingPercent=39.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=43	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:15.285290000Z	ProcessingDelay=0.191584 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.191584 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.097084 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.099800 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.074166 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.131 ms	TotalDelay=3.716072 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.056709 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.074 ms	TotalDelay=0.132535 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.199300 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.810 ms	TotalDelay=1.009677 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.744044 ms	TotalProcessingDelay=0.287000 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.950120 ms	ProcessingPercent=6.0%	TransmissionPercent=0.1%	PropagationPercent=52.7%	QueuingPercent=41.1%	Bottleneck=Propagation
+----
+FRAME	FrameNo=44	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:15.489222000Z	ProcessingDelay=0.101458 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.101458 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.042375 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.044443 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.064500 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.687 ms	TotalDelay=4.255664 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.017250 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.134 ms	TotalDelay=0.152211 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.061417 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.129 ms	TotalDelay=0.190268 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.796194 ms	TotalProcessingDelay=0.547331 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.736659 ms	ProcessingPercent=9.4%	TransmissionPercent=0.2%	PropagationPercent=43.2%	QueuingPercent=47.2%	Bottleneck=Queuing
+----
+FRAME	FrameNo=45	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:15.694530000Z	ProcessingDelay=0.123166 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.123166 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.097833 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.100341 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.064958 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.874 ms	TotalDelay=4.448012 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.046291 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.131 ms	TotalDelay=0.178937 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.215083 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.731 ms	TotalDelay=0.945739 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=6.153619 ms	TotalProcessingDelay=0.928397 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.710521 ms	ProcessingPercent=15.1%	TransmissionPercent=0.2%	PropagationPercent=40.7%	QueuingPercent=44.0%	Bottleneck=Queuing
+----
+FRAME	FrameNo=46	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:15.895479000Z	ProcessingDelay=0.138916 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.138916 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.120666 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.123382 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.070458 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.096 ms	TotalDelay=4.677531 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.051500 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.096 ms	TotalDelay=0.149580 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.546857 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.517 ms	TotalDelay=1.064210 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=5.150208 ms	TotalProcessingDelay=0.333333 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=2.309951 ms	ProcessingPercent=6.5%	TransmissionPercent=0.1%	PropagationPercent=48.6%	QueuingPercent=44.9%	Bottleneck=Propagation
+----
+FRAME	FrameNo=47	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:16.099601000Z	ProcessingDelay=0.110583 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.110583 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.068708 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.070776 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.064208 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=2.016 ms	TotalDelay=4.584745 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.020042 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.053 ms	TotalDelay=0.074083 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.069792 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.240 ms	TotalDelay=0.310021 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=3.787325 ms	TotalProcessingDelay=0.398208 ms	TotalTransmissionDelay=0.010704 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.876913 ms	ProcessingPercent=10.5%	TransmissionPercent=0.3%	PropagationPercent=66.0%	QueuingPercent=23.2%	Bottleneck=Propagation
+----
+FRAME	FrameNo=48	UsedNetwork=SIMULATED	Len=126	CapLen=126	WireBits=1008	Timestamp=2026-02-23T09:03:16.304846000Z	ProcessingDelay=0.063583 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.063583 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.035041 ms	TransmissionDelay=0.001008 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.037549 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=112	IHL=20	ProcessingDelay=0.056750 ms	TransmissionDelay=0.008960 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.162 ms	TotalDelay=2.727894 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=443	Proto=TCP	PayloadLen=72	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.030667 ms	TransmissionDelay=0.000736 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.107 ms	TotalDelay=0.139203 ms
+APP	AppProto=TLS	ContentType=Handshake	Version=3.3	TLSVersion=TLS 1.2	Length=67	HandshakeType=ClientHello	SNI=example.com	Info=Client Hello	ProcessingDelay=0.212167 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.607 ms	TotalDelay=0.819096 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=3.992483 ms	TotalProcessingDelay=0.617185 ms	TotalTransmissionDelay=0.013200 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=0.860597 ms	ProcessingPercent=15.5%	TransmissionPercent=0.3%	PropagationPercent=62.7%	QueuingPercent=21.6%	Bottleneck=Propagation
+----
+FRAME	FrameNo=49	UsedNetwork=SIMULATED	Len=152	CapLen=152	WireBits=1216	Timestamp=2026-02-23T09:03:16.508949000Z	ProcessingDelay=0.057208 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.057208 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.039000 ms	TransmissionDelay=0.001216 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.041716 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=142.250.193.110	TTL=64	Proto=6	ProtoName=TCP	TotLen=138	IHL=20	ProcessingDelay=0.062416 ms	TransmissionDelay=0.011040 ms	PropagationDelay=2.500000 ms	QueuingDelay=0.287 ms	TotalDelay=2.860267 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=80	Proto=TCP	PayloadLen=98	Flags=0x18	FlagsDesc=PSH,ACK	ProcessingDelay=0.035375 ms	TransmissionDelay=0.000944 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.100 ms	TotalDelay=0.136839 ms
+APP	AppProto=HTTP	FirstLine=GET /index.html HTTP/1.1	Type=Request	Method=GET	Path=/index.html	ProcessingDelay=0.423186 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.473 ms	TotalDelay=0.896452 ms
+----
+DELAY_SUMMARY	TotalNodalDelay=4.634539 ms	TotalProcessingDelay=0.281000 ms	TotalTransmissionDelay=0.005424 ms	TotalPropagationDelay=2.501500 ms	TotalQueuingDelay=1.846615 ms	ProcessingPercent=6.1%	TransmissionPercent=0.1%	PropagationPercent=54.0%	QueuingPercent=39.8%	Bottleneck=Propagation
+----
+FRAME	FrameNo=50	UsedNetwork=SIMULATED	Len=71	CapLen=71	WireBits=568	Timestamp=2026-02-23T09:03:16.714220000Z	ProcessingDelay=0.088541 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.000000 ms	TotalDelay=0.088541 ms
+LINK	DstMAC=00:00:00:00:00:00	SrcMAC=00:11:22:33:44:55	EtherType=0x0800	EtherTypeDesc=IPv4	ProcessingDelay=0.058834 ms	TransmissionDelay=0.000568 ms	PropagationDelay=0.000500 ms	QueuingDelay=0.001000 ms	TotalDelay=0.060902 ms	LinkRate=1000 Mbps	Distance=100.0 m
+NETWORK	SrcIP=192.168.0.2	DstIP=8.8.8.8	TTL=64	Proto=17	ProtoName=UDP	TotLen=57	IHL=20	ProcessingDelay=0.060291 ms	TransmissionDelay=0.004560 ms	PropagationDelay=2.500000 ms	QueuingDelay=1.668 ms	TotalDelay=4.232523 ms	HopDistance=500 km
+TRANSPORT	SrcPort=51322	DstPort=53	Proto=UDP	PayloadLen=29	Flags=-	ProcessingDelay=0.014209 ms	TransmissionDelay=0.000296 ms	PropagationDelay=0.001000 ms	QueuingDelay=0.058 ms	TotalDelay=0.073696 ms
+APP	AppProto=DNS	ID=0x1234	Flags=0x0100	Questions=1	Answers=0	Authority=0	Additional=0	Type=Query	QueryType=A	Query=example.com	ProcessingDelay=0.059125 ms	TransmissionDelay=0.000000 ms	PropagationDelay=0.000000 ms	QueuingDelay=0.120 ms	TotalDelay=0.178876 ms
+----

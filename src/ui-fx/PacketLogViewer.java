@@ -31,6 +31,14 @@ public class PacketLogViewer extends Application {
 
     private static final String DEFAULT_LOG_FILE = "packet_analysis_log.txt";
 
+    /** Set pcap library name on macOS so pcap4j finds libpcap.dylib (must be before any Pcaps use). */
+    private static void ensureMacOsPcapLibName() {
+        String os = System.getProperty("os.name", "").toLowerCase();
+        if (os.contains("mac") || os.contains("darwin")) {
+            System.setProperty("org.pcap4j.core.pcapLibName", "libpcap.dylib");
+        }
+    }
+
     private TableView<PacketRecord> packetRecordTableView;
     private TextArea packetDetailsTextArea;
     private Label statusBarLabel;
@@ -39,6 +47,7 @@ public class PacketLogViewer extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        ensureMacOsPcapLibName();
         this.primaryStage = primaryStage;
 
         try {
@@ -214,8 +223,11 @@ public class PacketLogViewer extends Application {
             showAlert(Alert.AlertType.WARNING, "Live capture unavailable",
                     "Could not list interfaces (" + e.getMessage() + "). Simulation mode is still available.");
         } catch (LinkageError e) {
-            showAlert(Alert.AlertType.WARNING, "Live capture unavailable",
-                    "Npcap/WinPcap is not installed. Use Simulation mode, or install Npcap from https://npcap.com for live capture.");
+            String os = System.getProperty("os.name", "").toLowerCase();
+            String hint = os.contains("win")
+                    ? "Npcap is not installed. Use Simulation mode, or install Npcap from https://npcap.com for live capture."
+                    : "libpcap is not installed. Use Simulation mode, or install it (e.g. on macOS: brew install libpcap) for live capture.";
+            showAlert(Alert.AlertType.WARNING, "Live capture unavailable", hint);
         }
 
         try {

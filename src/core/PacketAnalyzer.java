@@ -11,7 +11,16 @@ import java.util.stream.Collectors;
 
 public class PacketAnalyzer {
 
+    /** Set pcap library name on macOS so pcap4j finds libpcap.dylib (must be before any Pcaps use). */
+    private static void ensureMacOsPcapLibName() {
+        String os = System.getProperty("os.name", "").toLowerCase();
+        if (os.contains("mac") || os.contains("darwin")) {
+            System.setProperty("org.pcap4j.core.pcapLibName", "libpcap.dylib");
+        }
+    }
+
     public static void main(String[] args) throws Exception {
+        ensureMacOsPcapLibName();
 
         String initialSelection = "sim";
         int durationSec = 10;
@@ -39,6 +48,10 @@ public class PacketAnalyzer {
 
         } catch (PcapNativeException e) {
             System.err.println("❌ Failed to list interfaces (PcapNativeException). Using simulation mode.");
+            initialSelection = "sim";
+            if (durationSec <= 0) durationSec = 10;
+        } catch (LinkageError e) {
+            System.err.println("❌ Pcap native library unavailable (" + e.getClass().getSimpleName() + "). Using simulation mode.");
             initialSelection = "sim";
             if (durationSec <= 0) durationSec = 10;
         } catch (NumberFormatException e) {

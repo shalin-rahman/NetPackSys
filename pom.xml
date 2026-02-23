@@ -28,6 +28,13 @@
             <version>1.8.2</version>
         </dependency>
 
+        <!-- Override JNA to 5.14+ for ARM64 macOS (Apple Silicon) support; pcap4j brings 5.3.1 -->
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>5.14.0</version>
+        </dependency>
+
         <!-- JUnit for testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>

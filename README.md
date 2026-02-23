@@ -87,6 +87,9 @@ The project has been refactored for clarity and modularity (replacing the old `n
 
 # Building & Testing
 
+**Quick start (macOS):**  
+From project root run `./src/ui-fx/run_ui_macos.sh` (see [Running on macOS](#running-on-macos) below).
+
 ## Core module
 1) Ensure JDK 21+ is available.
 2) Run tests:
@@ -98,11 +101,32 @@ mvn clean test
 mvn package
 java -jar target/NetPackSys-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
+On macOS with Java 17+, for live capture use:  
+`java --enable-native-access=ALL-UNNAMED -jar target/NetPackSys-1.0-SNAPSHOT-jar-with-dependencies.jar`
 
 ## JavaFX Viewer (UI)
 The UI module allows for interactive packet capture and analysis.
 
-### Running with Administrator Privileges (Required for Live Capture)
+### Running on macOS (Apple Silicon & Intel)
+From the project root:
+```bash
+# One-time: install libpcap for live capture
+brew install libpcap
+
+# Quick run (Simulation mode; no admin needed)
+./src/ui-fx/run_ui_macos.sh
+
+# Live packet capture (will prompt for your password)
+./src/ui-fx/run_ui_macos.sh --live
+```
+Live capture uses JNA 5.14 (ARM64-supported) and `libpcap.dylib`; the CLI JAR may need `--enable-native-access=ALL-UNNAMED` on Java 17+.
+Or manually:
+```bash
+mvn clean install -DskipTests
+cd src/ui-fx && mvn clean javafx:run
+```
+
+### Running with Administrator Privileges (Windows — Required for Live Capture)
 ```powershell
 cd src/ui-fx
 .\run_admin.ps1
