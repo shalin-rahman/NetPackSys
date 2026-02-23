@@ -4,6 +4,20 @@ This guide walks you through running the application and building the EXE from s
 
 ---
 
+## 🚀 The Fastest Way (Highly Recommended)
+
+If you just want to run the app with all features (Tests + Coverage + Live Capture GUI):
+
+1. Go to the project root folder.
+2. Double-click the **`run.bat`** file.
+3. Click **Yes** when the Windows UAC (Administrator) prompt appears.
+4. The app will:
+    - Close any old instances.
+    - Run all tests.
+    - Open the JavaFX GUI with Administrator rights.
+
+---
+
 ## What You Need Before Starting
 
 | Requirement | What it is | Where to get it |
@@ -12,10 +26,11 @@ This guide walks you through running the application and building the EXE from s
 | **Maven** | Build tool | [Apache Maven](https://maven.apache.org/download.cgi) – extract and add `bin` to PATH |
 | **PowerShell** | Command line | Built into Windows (Windows Key → type `PowerShell`) |
 
-Optional for **live packet capture** (not needed for Simulation mode or viewing logs):
+Optional for **live packet capture**:
 
 - **Npcap** (Windows): [https://npcap.com](https://npcap.com) – install so the app can capture real packets.
-- **Run as Administrator** when you want live capture (or use the EXE, which asks for admin automatically).
+- **Administrator Privileges**: Required for live capture (The `run.bat` handles this automatically).
+- **Smart Discovery**: The GUI now features 🔥 **Smart Traffic Discovery** — it scans your network cards and highlights the one currently being used for browsing to help you start successful captures instantly.
 
 ---
 
@@ -177,6 +192,7 @@ The EXE will always prompt for Administrator when you double-click it, so you do
 
 | What you want to do | Where to be | Command |
 |--------------------|-------------|---------|
+| **Run everything (tests + coverage + GUI)** | Project root | `.\scripts\run-all.ps1` |
 | Run tests | Project root | `mvn clean test` |
 | Run console app | Project root | `mvn package -DskipTests` then `java -jar target\NetPackSys-1.0-SNAPSHOT-jar-with-dependencies.jar` |
 | Run GUI (Maven) | Project root, then `src\ui-fx` | `mvn install -DskipTests` then `cd src\ui-fx` then `mvn javafx:run` |

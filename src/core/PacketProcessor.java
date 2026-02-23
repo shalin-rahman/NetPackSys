@@ -45,6 +45,7 @@ public final class PacketProcessor {
         }
 
         addDelaySummary(ctx);
+        addDataDump(ctx);
 
         boolean filter = protocols.contains("ALL");
         if (!filter) {
@@ -61,6 +62,38 @@ public final class PacketProcessor {
         List<String> rows = formatter.format(ctx);
         consoleWriter.writeRows(rows);
         fileWriter.writeRows(rows);
+    }
+
+    private void addDataDump(PacketContext ctx) {
+        byte[] raw = ctx.stub().rawData();
+        if (raw == null || raw.length == 0) return;
+
+        Map<String, String> data = new LinkedHashMap<>();
+        
+        // Hex representation
+        StringBuilder hex = new StringBuilder();
+        // Bit representation
+        StringBuilder bits = new StringBuilder();
+        
+        int len = Math.min(raw.length, 32); 
+        for (int i = 0; i < len; i++) {
+            hex.append(String.format("%02X ", raw[i]));
+            bits.append(String.format("%8s", Integer.toBinaryString(raw[i] & 0xFF)).replace(' ', '0')).append(" ");
+            
+            if ((i + 1) % 8 == 0 && i + 1 < len) {
+                hex.append("| ");
+                bits.append("| ");
+            }
+        }
+        
+        if (raw.length > 32) {
+            hex.append("...");
+            bits.append("...");
+        }
+
+        data.put("HexDump", hex.toString().trim());
+        data.put("BitDump", bits.toString().trim());
+        ctx.addLayer("DATA_DUMP", data, null);
     }
 
     private void addDelaySummary(PacketContext ctx) {

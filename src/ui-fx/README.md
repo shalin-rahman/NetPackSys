@@ -6,16 +6,18 @@ JavaFX GUI for the **NetPackSys** network analyzer: capture live traffic (or use
 
 ## Features
 
--   **Active Network Capture**: 
-    -   Capture live packets from any available network interface.
+-   **Smart Network Capture**: 
+    -   🔥 **Smart Discovery**: Automatically scans all active network interfaces for live traffic (packets/sec) and prioritizes the one currently being used.
+    -   **Color-Coded Status**: Active interfaces are shown in bold green; inactive ones in gray.
     -   "Simulation Mode" for testing without network hardware.
-    -   Configurable **Duration**, **Protocols** (e.g., TCP, HTTP, TLS), and **Output File**.
+    -   Configurable **Duration**, **Protocols** (CSV or "ALL"), and **Output File**.
 -   **Structured Table View**: 
-    -   Displays packet summaries (Frame No, Time, Source/Dest IP, Protocol, Length, Info, Delay) in a sortable table.
+    -   Displays unified packet summaries in a clean, multi-column grid.
+    -   **Enhanced Nodal Delay Column**: Instead of showing 0, it confirms processing with labels like `Processed [Pkt #X]`.
 -   **Detailed Analysis**:
     -   Select any packet to view its full raw content and detailed breakdown.
 -   **Log Management**:
-    -   Automatically loads the latest capture.
+    -   Automatically loads the latest capture upon completion.
     -   "View Log File" button to open the raw text log in your system editor.
 
 ## Requirements

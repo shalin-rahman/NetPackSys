@@ -50,7 +50,8 @@ public final class TransportParser implements LayerParser {
             m.put("DstPort", String.valueOf(dstPort));
             m.put("Proto", "TCP");
             m.put("PayloadLen", String.valueOf(payloadSize));
-            m.put("Flags", String.format("0x%02x", flags));
+            String flagsBin = String.format("%6s", Integer.toBinaryString(flags)).replace(' ', '0');
+            m.put("Flags", String.format("0x%02x (%s bits)", flags, flagsBin));
             m.put("FlagsDesc", getTcpFlags(flags));
 
         } else if (proto == 17) {

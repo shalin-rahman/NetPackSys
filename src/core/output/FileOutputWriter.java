@@ -10,7 +10,7 @@ public final class FileOutputWriter implements OutputWriter {
 
     public FileOutputWriter(String path) {
         try {
-            this.out = new PrintWriter(new FileWriter(path, true));
+            this.out = new PrintWriter(new FileWriter(path, false));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

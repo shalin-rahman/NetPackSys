@@ -4,10 +4,11 @@ Helper scripts for NetPackSys. Run them from the **project root** (the folder th
 
 | Script | Purpose |
 |--------|--------|
-| **setup-java.ps1** | Sets `JAVA_HOME` and `PATH` for the current session. Use once before running Maven. Optional: `-JdkPath "C:\path\to\jdk-21"`. |
-| **run-tests.ps1** | Runs core tests, installs core, then runs UI-FX tests. Optional: `-JdkPath "C:\path\to\jdk-21"`. |
-| **run-ui.ps1** | Builds and runs the JavaFX app. Use `-RunAsAdmin` for live capture. Optional: `-JdkPath "C:\path\to\jdk-21"`. |
-| **build-exe.ps1** | Builds `NetPackSys.exe` (always asks for Administrator). Output: `src\ui-fx\target\dist\`. Optional: `-JdkPath "C:\path\to\jdk-21"`. |
+| **run-all.ps1** | **Main Entry Point**. Automatically elevates to Admin, closes old instances, runs all tests with JaCoCo coverage, and launches the GUI. |
+| **setup-java.ps1** | Sets `JAVA_HOME` and `PATH` for the current session. |
+| **run-tests.ps1** | Runs core tests, installs core, then runs UI-FX tests. |
+| **run-ui.ps1** | Builds and runs the JavaFX app. Use `-RunAsAdmin` for live capture. |
+| **build-exe.ps1** | Builds `NetPackSys.exe` (self-elevating). Output: `src\ui-fx\target\dist\`. |
 
 If PowerShell blocks scripts, run once:
 

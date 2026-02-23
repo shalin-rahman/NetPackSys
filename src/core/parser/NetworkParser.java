@@ -36,6 +36,9 @@ public final class NetworkParser implements LayerParser {
         int totLen = ((raw[2] & 0xFF) << 8) | (raw[3] & 0xFF);
         int proto = raw[9] & 0xFF;
         int ttl = raw[8] & 0xFF;
+        int fragOffset = ((raw[6] & 0x1F) << 8) | (raw[7] & 0xFF);
+        int flags = (raw[6] & 0xE0) >> 5;
+        String flagsBin = String.format("%3s", Integer.toBinaryString(flags)).replace(' ', '0');
 
         Map<String, String> m = new LinkedHashMap<>();
         m.put("SrcIP", ip(raw, 12));
@@ -45,6 +48,8 @@ public final class NetworkParser implements LayerParser {
         m.put("ProtoName", getProtocolName(proto));
         m.put("TotLen", String.valueOf(totLen));
         m.put("IHL", String.valueOf(ihl));
+        m.put("Flags", String.format("0x%02x (%s bits)", flags, flagsBin));
+        m.put("FragOffset", String.valueOf(fragOffset));
 
         double processingDelay = (System.nanoTime() - startTime) / 1_000_000.0;
         double routerProcessingDelay = 0.05;

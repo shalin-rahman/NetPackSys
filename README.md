@@ -1,6 +1,6 @@
 # Abstract
 
-This report presents the design, implementation, and theoretical analysis of a Concurrent Network Packet Analyzer (NETPACKSYS)— a scalable network monitoring system developed using Java Virtual Threads and Structured Concurrency. The NETPACKSYS demonstrates how modern Java concurrency can be effectively combined with object-oriented design principles to achieve high performance, modularity, and clarity. It integrates advanced design patterns, domain modeling, and concurrency mechanisms to analyze packets in real-time with microsecond precision. Beyond implementation, this report systematically evaluates its object-oriented architecture, concurrency models, and performance trade-offs, while aligning its design with the SOLID principles and modern Java design patterns.
+This report presents the design, implementation, and theoretical analysis of a Concurrent Network Packet Analyzer (NETPACKSYS)— a scalable network monitoring system developed using Java Virtual Threads and Structured Concurrency. The NETPACKSYS demonstrates how modern Java concurrency can be effectively combined with object-oriented design principles to achieve high performance, modularity, and clarity. It integrates advanced design patterns, domain modeling, and concurrency mechanisms to analyze packets in real-time with microsecond precision. Beyond implementation, this report systematically evaluates its object-oriented architecture, concurrency models, and performance trade-offs, while aligning its design with the SOLID principles and modern Java design patterns. The system includes a **Smart Traffic Audit** feature that automatically detects and prioritizes network interfaces with live data to ensure successful captures.
 
 ---
 
@@ -11,6 +11,7 @@ The objective of the NETPACKSYS is to develop a modular and scalable network ana
 • Leverages Virtual Threads to achieve high concurrency with minimal memory overhead.
 • Utilizes Structured Concurrency to maintain lifecycle safety.
 • Applies design patterns and OOP principles systematically.
+• **Smartly identifies active network interfaces** to guide user selection.
 • Produces accurate delay metrics and transparent, reproducible results.
 
 ---
@@ -18,6 +19,8 @@ The objective of the NETPACKSYS is to develop a modular and scalable network ana
 # Description
 
 The analyzer leverages Java Virtual Threads, allowing the creation of thousands of lightweight tasks for concurrent I/O and processing. Structured Concurrency is applied to manage and synchronize concurrent packet-processing tasks safely. The system measures and records nodal delays at multiple levels and produces tab-separated Wireshark-style log files. Each packet’s timestamp, protocol, and computed delay are logged both to the console and a persistent file (packet_analysis_log.txt) for verification and analysis.
+
+The GUI version features **Smart Discovery**, which briefly scans active network interfaces for real-time traffic (packets/sec) and highlights them with a 🔥 icon to help users avoid selecting empty or dead interfaces.
 
 ---
 
@@ -93,32 +96,21 @@ The project is split into:
 
 **New to the project?** Use the step-by-step guide: **[GETTING-STARTED.md](GETTING-STARTED.md)**.
 
-**Already set up?** Summary:
+**Already set up?** The easiest way to run:
 
-1. **Set Java (PowerShell, one-time per session):**
+1. **One-Click Launch (Project Root):**
+   Double-click the **`run.bat`** file.
+   - Automatically asks for Administrator rights.
+   - Cleans up any previous instances.
+   - Runs all core/UI tests with JaCoCo coverage.
+   - Launches the JavaFX GUI.
+
+2. **Manual PowerShell Launch (Project Root):**
    ```powershell
-   .\scripts\setup-java.ps1 -JdkPath "C:\path\to\jdk-21"
+   .\scripts\run-all.ps1
    ```
-2. **Run tests (project root):**
-   ```powershell
-   mvn clean test
-   ```
-3. **Run console app (project root):**
-   ```powershell
-   mvn package -DskipTests
-   java -jar target\NetPackSys-1.0-SNAPSHOT-jar-with-dependencies.jar
-   ```
-4. **Run GUI (project root):**
-   ```powershell
-   mvn install -DskipTests
-   cd src\ui-fx
-   mvn javafx:run
-   ```
-   Or use the script: `.\scripts\run-ui.ps1` (and `-RunAsAdmin` for live capture).
-5. **Build EXE (always asks for Administrator):**
-   ```powershell
-   .\scripts\build-exe.ps1
-   ```
-   Then run `src\ui-fx\target\dist\NetPackSys.exe` (keep the `lib` folder next to it).
+
+3. **Standalone EXE:**
+   Run `src\ui-fx\target\dist\NetPackSys.exe` (requires the `lib` folder in the same location).
 
 For full, line-by-line steps and troubleshooting, see **[GETTING-STARTED.md](GETTING-STARTED.md)**.
