@@ -36,7 +36,81 @@ The logic center of the application. It performs:
 
 ---
 
-## 3. The Technical Workflow (Sequence)
+## 3. Class Relationship & Detailed Flow Diagram
+
+This diagram provides a comprehensive view of the major classes across the **UI** and **Core** modules, illustrating the complete lifecycle of a packet from raw capture to visual record.
+
+```mermaid
+graph TD
+    subgraph UI_Module [UI-FX Module]
+        PLV[PacketLogViewer] -->|Config/Init| PAA[PacketAnalyzerApp]
+        PLV -->|Request Load| LP[LogPresenter]
+        LP -->|Delegates to| LPR[LogProcessors]
+        subgraph Processors [UI Data Mappers]
+            LPR --- TLP[TableLogProcessor]
+            LPR --- SLP[SummaryLogProcessor]
+            LPR --- DLP[DetailLogProcessor]
+        end
+        TLP -->|Maps to| PR[PacketRecord]
+        PR -->|UI Binding| PLV
+    end
+
+    subgraph Core_Ingestion [Ingestion Layer]
+        PAA -->|Lifecycle| CS{CaptureService}
+        CS -.->|Native| PCS[PcapCaptureService]
+        CS -.->|Test| SCS[SimulatedCaptureService]
+        PCS -->|Emits| PPS[PcapPacketStub]
+        SCS -->|Emits| PPS
+    end
+
+    subgraph Core_Analysis [Analysis Engine]
+        PAA -->|Dispatcher| SBE[StructuredBatchExecutor]
+        CS -->|Submit Task| SBE
+        SBE -->|Process| PP[PacketProcessor]
+        PP -->|State Container| PC[PacketContext]
+        PP -->|Sequence| LPZ[LayerParsers]
+        
+        subgraph Parsers [Chain of Responsibility]
+            LPZ --> FP[FrameParser]
+            FP --> LNP[LinkParser]
+            LNP --> NP[NetworkParser]
+            NP --> TP[TransportParser]
+            TP --> APR[AppParserRegistry]
+            APR --> DNS[DnsParser/Http/Tls]
+        end
+        
+        Parsers -->|Metric Data| DI[DelayInfo]
+        DI -->|Context Storage| PC
+        
+        PP -->|Row Mapping| PFM[PacketFormatter]
+        PFM -.-> TRF[TabRowPacketFormatter]
+        TRF -->|String Rows| OW{OutputWriter}
+        OW -.-> FOW[FileOutputWriter]
+        OW -.-> COA[ConsoleOutputAccumulator]
+        FOW -->|Write| LOG[(packet_analysis_log.txt)]
+    end
+
+    LOG -.->|Read| LP
+```
+
+### Major Class Roles & Interactions:
+1.  **`Config` (Record)**: Immutable state holding interface selection, duration, and protocol filters.
+2.  **`PacketAnalyzerApp`**: The "God Object" or Orchestrator that wires the ingestion and analysis modules together.
+3.  **`CaptureService` Hierarchy**: Uses `Pcap4j` (`PcapCaptureService`) or custom logic (`SimulatedCaptureService`) to feed raw `PcapPacketStub` objects into the pipeline.
+4.  **`PacketContext`**: The critical state container for a single packet. It holds the `rawData`, `layers` (parsed headers), and `delayInfo` (calculated metrics).
+5.  **`LayerParser` Suite**:
+    -   **`FrameParser`**: Metadata (length, arrival time).
+    -   **`NetworkParser`**: IPv4 decoding + Routing/Propagation delay logic.
+    -   **`TransportParser`**: TCP/UDP flags and bit-formatting logic.
+    -   **`ApplicationParserRegistry`**: Selects **`DnsParser`**, **`HttpParser`**, or **`TlsParser`** based on ports.
+6.  **`DelayInfo`**: Stores the four components of Nodal Delay (Proc, Trans, Prop, Queue) for each layer.
+7.  **`TabRowPacketFormatter`**: Serializes the `PacketContext` into the multi-line, tab-separated format required by the log file.
+8.  **`FileOutputWriter`**: Handles I/O, ensuring the log file is overwritten/appended correctly.
+9.  **`LogPresenter` & `LogProcessors`**: The bridge back to the UI. They parse the raw logs into **`PacketRecord`** domain objects for the JavaFX TableView.
+
+---
+
+## 4. The Technical Workflow (Sequence)
 
 ### Phase 1: Configuration & Initialization
 1.  **User Input**: `ConsoleUI` or `PacketLogViewer` collects parameters.
@@ -67,7 +141,7 @@ The logic center of the application. It performs:
 
 ---
 
-## 4. OOP Features & Software Architecture
+## 5. OOP Features & Software Architecture
 
 The application is built on modern Object-Oriented principles to ensure maintainability, scalability, and testability.
 
@@ -100,7 +174,7 @@ The application is built on modern Object-Oriented principles to ensure maintain
 
 ---
 
-## 5. Class Responsibility Matrix
+## 6. Class Responsibility Matrix
 
 | Component | Responsibility | Who/What |
 | :--- | :--- | :--- |
